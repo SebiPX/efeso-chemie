@@ -1,3 +1,5 @@
+import { FadeIn } from './FadeIn';
+
 type HeroExpert = {
   name: string;
   title: string;
@@ -69,44 +71,46 @@ const HeroSection = () => {
         </div>
 
         {/* HERO ROW 3 (Experts Grid 5x2) */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-4 gap-y-12 mt-16 w-full">
+        <div id="advisory-board" className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-4 gap-y-12 mt-16 w-full pt-10">
            {heroExperts.map((expert, idx) => (
-             <div key={idx} className="flex flex-col items-start group cursor-pointer">
-               
-               {/* Fixed Height Image Container with Hover Crossfade */}
-               <div className="w-full aspect-square mb-4 relative transform group-hover:-translate-y-2 transition-transform duration-500">
+             <FadeIn key={idx} delay={idx * 0.1}>
+               <div className="flex flex-col items-start group cursor-pointer h-full">
                  
-                 {/* 1) Frontal Image (visible when not hovered) */}
-                 <img 
-                    src={expert.img || "/image/cube-frontal.png"} 
-                    alt={expert.name} 
-                    className="w-full h-full object-contain object-bottom drop-shadow-lg absolute inset-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0" 
-                    onError={(e) => { (e.target as HTMLImageElement).src = "/image/cube-frontal.png"; }}
-                 />
+                 {/* Fixed Height Image Container with Hover Crossfade */}
+                 <div className="w-full xl:w-[90%] aspect-square mb-4 relative transform group-hover:-translate-y-2 transition-transform duration-500">
+                   
+                   {/* 1) Frontal Image (visible when not hovered) */}
+                   <img 
+                      src={expert.img || "/image/wuerfel_ohne_frontal.png"} 
+                      alt={expert.name} 
+                      className="w-full h-full object-contain object-bottom drop-shadow-[0_10px_20px_rgba(0,0,0,0.3)] absolute inset-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0" 
+                      onError={(e) => { (e.target as HTMLImageElement).src = "/image/wuerfel_ohne_frontal.png"; }}
+                   />
 
-                 {/* 2) Isometric Image (visible on hover) */}
-                 <img 
-                    src={expert.imgHover || "/image/cube-isometric.png"} 
-                    alt={expert.name + " hover"} 
-                    className="w-full h-full object-contain object-bottom drop-shadow-lg absolute inset-0 transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100" 
-                    onError={(e) => { (e.target as HTMLImageElement).src = "/image/cube-isometric.png"; }}
-                 />
+                   {/* 2) Isometric Image (visible on hover) */}
+                   <img 
+                      src={expert.imgHover || "/image/wuerfel_ohne_isometric.png"} 
+                      alt={expert.name + " hover"} 
+                      className="w-full h-full object-contain object-bottom drop-shadow-[0_15px_30px_rgba(0,0,0,0.4)] absolute inset-0 transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100" 
+                      onError={(e) => { (e.target as HTMLImageElement).src = "/image/wuerfel_ohne_isometric.png"; }}
+                   />
+                   
+                 </div>
                  
-               </div>
-               
-               {/* Left-Aligned Text Content */}
-               <div className="text-left w-full pl-1">
-                 <h4 className="text-[12px] md:text-[13px] text-gray-700 font-bold uppercase leading-tight group-hover:text-black mb-1 drop-shadow-sm">
-                   {expert.name}
-                 </h4>
-                 {expert.title && (
-                    <p className="text-[10px] md:text-[11px] text-white font-medium leading-snug whitespace-pre-line">
-                      {expert.title}
-                    </p>
-                 )}
-               </div>
+                 {/* Left-Aligned Text Content */}
+                 <div className="text-left w-full pl-1">
+                   <h4 className="text-[12px] md:text-[13px] text-gray-700 font-bold uppercase leading-tight group-hover:text-black mb-1 drop-shadow-sm">
+                     {expert.name}
+                   </h4>
+                   {expert.title && (
+                      <p className="text-[10px] md:text-[11px] text-white font-medium leading-snug whitespace-pre-line">
+                        {expert.title}
+                      </p>
+                   )}
+                 </div>
 
-             </div>
+               </div>
+             </FadeIn>
            ))}
         </div>
 

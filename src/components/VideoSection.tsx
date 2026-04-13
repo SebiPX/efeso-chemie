@@ -1,8 +1,9 @@
-
+import { FadeIn } from './FadeIn';
 
 // Reusable VideoCard Component to ensure perfectly uniform styling
 const VideoCard = ({ imageSrc, name, question, fallbackSeed, isBoxedQuestion = false, logoType = 'magenta' }: { imageSrc: string, name: string, question: string, fallbackSeed: string, isBoxedQuestion?: boolean, logoType?: 'magenta' | 'orangeMenu' }) => {
   return (
+    <FadeIn direction="up">
     <div className="flex flex-col group cursor-pointer w-full">
       {/* Thumbnail Container */}
       <div className="w-full relative overflow-hidden rounded-md shadow-lg mb-6 transform group-hover:scale-[1.02] transition-transform duration-500">
@@ -42,6 +43,7 @@ const VideoCard = ({ imageSrc, name, question, fallbackSeed, isBoxedQuestion = f
          </div>
       </div>
     </div>
+    </FadeIn>
   );
 };
 
@@ -50,6 +52,7 @@ const VideoSection = () => {
     <section id="videos" className="relative w-full py-10 bg-transparent overflow-hidden">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* -- SUSTAINABILITY INTRO -- */}
+        <FadeIn direction="up">
         <div className="w-full mb-16">
           <h3 className="text-6xl md:text-[85px] font-bold text-[#ef7918] mb-2 tracking-tight drop-shadow-sm uppercase leading-none">
             Sustainability
@@ -63,6 +66,7 @@ const VideoSection = () => {
             </p>
           </div>
         </div>
+        </FadeIn>
 
         {/* -- SUSTAINABILITY VIDEOS -- */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-24">
@@ -85,6 +89,7 @@ const VideoSection = () => {
         </div>
 
         {/* -- DECARBONIZATION INTRO -- */}
+        <FadeIn direction="up">
         <div className="w-full mt-24 pt-10">
           <h3 className="text-5xl md:text-[65px] font-bold text-[#ef7918] mb-4 tracking-tight drop-shadow-sm uppercase">
             Decarbonization
@@ -98,6 +103,7 @@ const VideoSection = () => {
             </p>
           </div>
         </div>
+        </FadeIn>
 
         {/* -- DECARBONIZATION VIDEOS -- */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mt-16 mb-20">
