@@ -1,25 +1,13 @@
+import { FadeIn } from './FadeIn';
 
+const topics = [
+  { title: "SUSTAINABILITY", text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu", link: "#" },
+  { title: "INFRASTRUCTURE", text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu", link: "#" },
+  { title: "DECARBONIZATION", text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu", link: "#" },
+  { title: "OPERATIONAL\nEXCELLENCE", text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu", link: "#" }
+];
 
 const TopicsSection = () => {
-  const topics = [
-    {
-      title: "SUSTAINABILITY",
-      text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam"
-    },
-    {
-      title: "INFRASTRUCTURE",
-      text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam"
-    },
-    {
-      title: "DECARBONIZATION",
-      text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis"
-    },
-    {
-      title: "OPERATIONAL\nEXCELLENCE",
-      text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam"
-    }
-  ];
-
   return (
     <section id="topics" className="relative w-full pb-20 overflow-hidden">
       
@@ -68,7 +56,7 @@ const TopicsSection = () => {
 
         {/* 4 Pillars Grid */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 px-4 mb-32">
-           {topicsData.map((topic, idx) => (
+           {topics.map((topic, idx) => (
              <FadeIn key={idx} delay={idx * 0.15}>
                <div className="flex flex-col relative w-full pt-10 pb-40 px-6 bg-gradient-to-b from-[#eb7614] via-[#e8812c]/90 to-transparent hover:-translate-y-2 transition-transform duration-500 rounded-[2px] h-full">
                  <h3 className="text-white font-bold italic text-center text-[16px] md:text-[18px] tracking-wide uppercase mb-6 h-12 flex items-center justify-center leading-tight whitespace-pre-line drop-shadow-sm">
@@ -81,8 +69,6 @@ const TopicsSection = () => {
              </FadeIn>
            ))}
         </div>
-
-
 
       </div>
     </section>
