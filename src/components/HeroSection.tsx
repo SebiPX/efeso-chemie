@@ -6,16 +6,16 @@ type HeroExpert = {
 };
 
 const heroExperts: HeroExpert[] = [
-  { name: "FERNANDO CRUZADO", title: "VP/Partner & Head of\nChemical Industry EMEA\nEFESO Management\nConsultants", img: "/image/3.png" },
-  { name: "DAVID SEDGE", title: "", img: "/image/1.png" },
-  { name: "JOACHIM KROHN", title: "", img: "/image/4.png" },
-  { name: "MICHIEL VAN DEN BOOMEN", title: "VP/Partner\nEFESO Management\nConsultants", img: "/image/5.png" },
-  { name: "JEROEN VAN DER MEER", title: "", img: "/image/2.png" },
-  { name: "PIETER BOON", title: "Member of The\nSupervisory Board\nAnQore", img: "/image/6.png" },
-  { name: "HATEM SOLIMAN", title: "Former President Middle East,\nAsia Pacific and Latin Ameri-\nca Regions Schlumberger", img: "/image/7.png" },
-  { name: "LUCA ROSETTO", title: "Former Executive\nVP Operations\nRoyal DSM N.V.", img: "/image/8.png" },
-  { name: "DR. CHRISTOPH BALZAREK", title: "EVP Corporate Development,\nSustainability & Innovation\nOXEA", img: "/image/14.png" },
-  { name: "HARALD GRUBER", title: "", img: "/image/15.png" }
+  { name: "FERNANDO CRUZADO", title: "VP/Partner & Head of\nChemical Industry EMEA\nEFESO Management\nConsultants", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/3.png" },
+  { name: "DAVID SEDGE", title: "", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/1.png" },
+  { name: "JOACHIM KROHN", title: "", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/4.png" },
+  { name: "MICHIEL VAN DEN BOOMEN", title: "VP/Partner\nEFESO Management\nConsultants", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/5.png" },
+  { name: "JEROEN VAN DER MEER", title: "", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/2.png" },
+  { name: "PIETER BOON", title: "Member of The\nSupervisory Board\nAnQore", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/6.png" },
+  { name: "HATEM SOLIMAN", title: "Former President Middle East,\nAsia Pacific and Latin Ameri-\nca Regions Schlumberger", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/7.png" },
+  { name: "LUCA ROSETTO", title: "Former Executive\nVP Operations\nRoyal DSM N.V.", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/8.png" },
+  { name: "DR. CHRISTOPH BALZAREK", title: "EVP Corporate Development,\nSustainability & Innovation\nOXEA", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/14.png" },
+  { name: "HARALD GRUBER", title: "", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/15.png" }
 ];
 
 const HeroSection = () => {
