@@ -54,7 +54,7 @@ const HeroSection = () => {
              <img 
                src="/image/wuerfel-ef.png" 
                alt="Efeso Ice Cube" 
-               className="w-full max-w-[400px] md:max-w-[480px] h-auto object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] transform hover:-translate-y-2 transition-transform duration-700"
+               className="w-full max-w-[400px] md:max-w-[480px] h-auto object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] transform hover:-translate-y-2 md:translate-x-8 lg:translate-x-16 transition-transform duration-700"
              />
           </div>
 
