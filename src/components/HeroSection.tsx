@@ -69,7 +69,7 @@ const HeroSection = () => {
         </div>
 
         {/* HERO ROW 3 (Experts Grid 5x2) */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-4 gap-y-12 mt-16 w-full pb-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-4 gap-y-12 mt-16 w-full">
            {heroExperts.map((expert, idx) => (
              <div key={idx} className="flex flex-col items-start group cursor-pointer">
                

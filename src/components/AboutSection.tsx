@@ -10,7 +10,7 @@ const AboutSection = () => {
           
           {/* Left Column: Text & Persons */}
           <div className="w-full md:w-1/2">
-            <h2 className="text-5xl md:text-[65px] font-bold text-white mb-6 uppercase tracking-tight drop-shadow-sm leading-none">
+            <h2 className="text-5xl md:text-[65px] font-bold text-white mb-20 uppercase tracking-tight drop-shadow-sm leading-none">
               ABOUT EFESO
             </h2>
             
@@ -65,7 +65,7 @@ const AboutSection = () => {
 
         {/* -- FAQ -- */}
         <div className="mb-32" id="faq">
-          <h2 className="text-4xl md:text-[50px] font-bold text-white mb-10 tracking-tight uppercase">
+          <h2 className="text-4xl md:text-[50px] font-bold text-white mb-20 tracking-tight uppercase">
             FAQ
           </h2>
           <ul className="space-y-6 text-[14px] font-medium text-white/90">
@@ -78,7 +78,7 @@ const AboutSection = () => {
 
         {/* -- CONTACT -- */}
         <div id="contact-section">
-          <h2 className="text-4xl md:text-[50px] font-bold text-white mb-10 tracking-tight uppercase">
+          <h2 className="text-4xl md:text-[50px] font-bold text-white mb-20 tracking-tight uppercase">
             CONTACT
           </h2>
           <div className="flex gap-12 items-center">

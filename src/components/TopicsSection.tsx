@@ -21,10 +21,10 @@ const TopicsSection = () => {
   ];
 
   return (
-    <section id="topics" className="relative w-full pb-20 pt-10 overflow-hidden">
+    <section id="topics" className="relative w-full pb-20 overflow-hidden">
       
       {/* FULL WIDTH BANNER: 2-3 prägnante Problemfelder */}
-      <div className="w-full bg-gradient-to-r from-[#ef7918] via-[#cca878] to-transparent py-14 mb-20 relative -ml-4 md:-ml-0">
+      <div className="w-full bg-gradient-to-r from-[#ef7918] via-[#cca878] to-transparent py-14 mt-20 mb-20 relative -ml-4 md:-ml-0">
          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
            
            {/* Left Side: Headlines */}
@@ -55,7 +55,7 @@ const TopicsSection = () => {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         
         {/* Title & Button Row */}
-        <div className="flex flex-col md:flex-row items-center justify-between mb-12 px-4">
+        <div className="flex flex-col md:flex-row items-center justify-between mb-20 px-4">
           <h2 className="text-5xl md:text-[65px] font-bold text-white uppercase leading-none drop-shadow-sm">
             OUR TOPICS
           </h2>
