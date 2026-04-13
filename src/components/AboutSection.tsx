@@ -58,7 +58,7 @@ const AboutSection = () => {
               <img 
                 src="/image/wuerfel_efeso.png" 
                 alt="EFESO Stacked Cubes" 
-                className="w-full md:w-[115%] max-w-none h-auto object-contain drop-shadow-[0_15px_35px_rgba(0,0,0,0.35)] hover:scale-[1.03] transition-transform duration-500 z-10"
+                className="w-full md:w-[115%] max-w-none h-auto object-contain drop-shadow-[0_15px_35px_rgba(0,0,0,0.35)] md:translate-x-12 lg:translate-x-20 hover:scale-[1.03] transition-transform duration-500 z-10"
               />
             </div>
 
