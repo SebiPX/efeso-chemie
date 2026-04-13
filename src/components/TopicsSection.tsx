@@ -11,36 +11,7 @@ const TopicsSection = () => {
   return (
     <section id="topics" className="relative w-full pb-20 overflow-hidden">
       
-      {/* FULL WIDTH BANNER: 2-3 prägnante Problemfelder */}
-      <FadeIn direction="up">
-        <div className="w-full bg-gradient-to-r from-[#ef7918] via-[#cca878] to-transparent py-14 mt-20 mb-20 relative -ml-4 md:-ml-0">
-           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
-             
-             {/* Left Side: Headlines */}
-             <div className="w-full md:w-[60%] flex flex-col items-start text-left">
-               <h2 className="text-5xl md:text-[65px] font-bold text-white leading-tight drop-shadow-sm">
-                 2-3 prägnante
-               </h2>
-               <h3 className="text-4xl md:text-[55px] font-bold italic text-[#3c3d43] leading-tight drop-shadow-sm -mt-2">
-                 Problemfelder
-               </h3>
-             </div>
-
-             {/* Right Side: Text & Button */}
-             <div className="w-full md:w-[40%] flex flex-col items-start mt-8 md:mt-0 md:pl-10">
-               <p className="text-white text-[15px] leading-snug font-medium mb-6 mt-4">
-                 Kurze Erklärung des Advisory<br />
-                 Board Konzepts
-               </p>
-               <button className="bg-[#ef7918] text-white font-bold py-3.5 px-8 rounded-[4px] uppercase text-[15px] tracking-wider shadow-lg hover:-translate-y-1 hover:bg-orange-600 transition-all flex flex-col items-center leading-tight">
-                  <span>MORE ON</span>
-                  <span>THIS TOPIC</span>
-               </button>
-             </div>
-
-           </div>
-        </div>
-      </FadeIn>
+      {/* Banner removed based on feedback */}
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         

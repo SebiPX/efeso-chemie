@@ -8,16 +8,18 @@ type HeroExpert = {
 };
 
 const heroExperts: HeroExpert[] = [
-  { name: "FERNANDO CRUZADO", title: "VP/Partner & Head of\nChemical Industry EMEA\nEFESO Management\nConsultants", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
-  { name: "DAVID SEDGE", title: "", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
-  { name: "JOACHIM KROHN", title: "", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
-  { name: "MICHIEL VAN DEN BOOMEN", title: "VP/Partner\nEFESO Management\nConsultants", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
-  { name: "JEROEN VAN DER MEER", title: "", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
+  // Bottom row in the original (Externals)
   { name: "PIETER BOON", title: "Member of The\nSupervisory Board\nAnQore", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
   { name: "HATEM SOLIMAN", title: "Former President Middle East,\nAsia Pacific and Latin Ameri-\nca Regions Schlumberger", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
   { name: "LUCA ROSETTO", title: "Former Executive\nVP Operations\nRoyal DSM N.V.", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
   { name: "DR. CHRISTOPH BALZAREK", title: "EVP Corporate Development,\nSustainability & Innovation\nOXEA", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
-  { name: "HARALD GRUBER", title: "", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" }
+  { name: "HARALD GRUBER", title: "", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
+  // Top row in the original (EFESO)
+  { name: "FERNANDO CRUZADO", title: "VP/Partner & Head of\nChemical Industry EMEA\nEFESO Management\nConsultants", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
+  { name: "DAVID SEDGE", title: "", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
+  { name: "JOACHIM KROHN", title: "", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
+  { name: "MICHIEL VAN DEN BOOMEN", title: "VP/Partner\nEFESO Management\nConsultants", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
+  { name: "JEROEN VAN DER MEER", title: "", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" }
 ];
 
 const HeroSection = () => {
@@ -25,10 +27,10 @@ const HeroSection = () => {
     <section className="relative min-h-[100vh] pt-32 pb-20 overflow-hidden flex items-center justify-center">
 
       {/* Main Container - Restricting max width to keep elements closer together like the original 970px layout */}
-      <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+      <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-2">
         
         {/* HERO TOP ROW (Text Left, Cube Right) */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-10 mb-16 pt-10">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-10 mb-6 pt-2">
           
           {/* Left Side: Slogan & Text */}
           <div className="flex flex-col items-start w-full md:w-[60%]">
@@ -61,7 +63,7 @@ const HeroSection = () => {
         </div>
 
         {/* HERO BOTTOM ROW (Subheadline only) */}
-        <div className="flex w-full mb-10 px-2 mt-4">
+        <div className="flex w-full mb-4 px-2 mt-2">
           <div className="w-full text-left">
             <h2 className="text-xl md:text-[22px] text-white font-medium mb-6 leading-[1.4] tracking-wide">
               Capitalizing on Growth Opportunities in the Chemical Industry:<br />
@@ -71,7 +73,7 @@ const HeroSection = () => {
         </div>
 
         {/* HERO ROW 3 (Experts Grid 5x2) */}
-        <div id="advisory-board" className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-4 gap-y-12 mt-16 w-full pt-10">
+        <div id="advisory-board" className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-4 gap-y-12 mt-6 w-full pt-4">
            {heroExperts.map((expert, idx) => (
              <FadeIn key={idx} delay={idx * 0.1}>
                <div className="flex flex-col items-start group cursor-pointer h-full">

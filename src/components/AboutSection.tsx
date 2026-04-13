@@ -11,7 +11,7 @@ const AboutSection = () => {
             
             {/* Left Column: Text & Persons */}
             <div className="w-full md:w-1/2">
-              <h2 className="text-5xl md:text-[65px] font-bold text-white mb-20 uppercase tracking-tight drop-shadow-sm leading-none">
+              <h2 className="text-5xl md:text-[65px] font-bold text-white mb-6 uppercase tracking-tight drop-shadow-sm leading-none">
                 ABOUT EFESO
               </h2>
               
@@ -21,33 +21,28 @@ const AboutSection = () => {
                  <span>Countries XXXX</span>
               </div>
               
-              <div className="w-full space-y-5 text-white/90 text-[12px] md:text-[13px] leading-relaxed text-justify mb-12">
+              <div className="w-full space-y-4 text-white/90 text-[13px] md:text-[14px] leading-relaxed text-left mb-12">
+                <p className="font-bold text-[#ef7918] text-[15px] uppercase tracking-wide">
+                  EFESO. Real Results, Together.
+                </p>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                  We deliver tailored, end-to-end services in operations, integrating industrial AI and digital, sustainability, and people development. Our expertise covers the full spectrum from operations strategy and transformation to transactions & turnaround, R&D and product profitability, cost and value engineering, manufacturing, procurement and supply chain. Each year, we work with leaders from global brands, mid-sized companies, and private equity on more than 1,500 across 75+ countries.
+                </p>
+                <p className="italic">
+                  What sets us apart is deep industry knowledge combined with hands-on implementation. The outcome: improvements you can see, feel, and measure.
                 </p>
               </div>
 
               <div>
-                 <h4 className="text-sm md:text-base font-bold text-white mb-6">Reference Persons</h4>
-                 <div className="flex gap-10">
-                    {/* Person 1 */}
-                    <div className="flex flex-col">
-                      <div className="w-24 h-24 bg-[#ff00ff] mb-3 shadow-md"></div>
-                      <div className="text-[12px] text-white leading-snug font-medium">
-                        Anna Reitinger<br />
-                        XXX<br />
-                        XXX
-                      </div>
+                 <h4 className="text-sm md:text-base font-bold text-[#ef7918] mb-5 uppercase tracking-wider">Your Contact</h4>
+                 <div className="flex items-center gap-5 bg-[#3c3d43]/30 p-4 rounded-md border border-white/5 w-max hover:bg-[#3c3d43]/50 transition-colors">
+                    <div className="w-16 h-16 rounded-full overflow-hidden shadow-lg border-2 border-white/20 flex-shrink-0">
+                      <img src="https://ui-avatars.com/api/?name=Fernando+Cruzado&background=ef7918&color=fff&size=128" alt="Fernando Cruzado" className="w-full h-full object-cover" />
                     </div>
-                    
-                    {/* Person 2 */}
-                    <div className="flex flex-col">
-                      <div className="w-24 h-24 bg-[#ff00ff] mb-3 shadow-md"></div>
-                      <div className="text-[12px] text-white leading-snug font-medium">
-                        André<br />
-                        XXX<br />
-                        XXX
-                      </div>
+                    <div className="text-[13px] text-white/90 leading-snug font-medium flex flex-col justify-center">
+                      <span className="font-bold uppercase text-[15px] text-white tracking-wide mb-0.5">Fernando Cruzado</span>
+                      <span>VP/Partner & Head of Chemical Industry EMEA</span>
+                      <span className="text-[#ef7918] opacity-90">EFESO Management Consultants</span>
                     </div>
                  </div>
               </div>

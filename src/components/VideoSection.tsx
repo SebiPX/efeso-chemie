@@ -1,7 +1,7 @@
 import { FadeIn } from './FadeIn';
 
 // Reusable VideoCard Component to ensure perfectly uniform styling
-const VideoCard = ({ imageSrc, name, question, fallbackSeed, isBoxedQuestion = false, logoType = 'magenta' }: { imageSrc: string, name: string, question: string, fallbackSeed: string, isBoxedQuestion?: boolean, logoType?: 'magenta' | 'orangeMenu' }) => {
+const VideoCard = ({ imageSrc, name, role, fallbackSeed, logoType = 'magenta' }: { imageSrc: string, name: string, role: string, fallbackSeed: string, logoType?: 'magenta' | 'orangeMenu' }) => {
   return (
     <FadeIn direction="up">
     <div className="flex flex-col group cursor-pointer w-full">
@@ -31,15 +31,9 @@ const VideoCard = ({ imageSrc, name, question, fallbackSeed, isBoxedQuestion = f
          )}
          
          {/* Text Section */}
-         <div className="flex flex-col items-start mt-1">
-           <h4 className="text-[#3c3d43] font-extrabold text-[18px] mb-1 leading-tight">{name}</h4>
-           {isBoxedQuestion ? (
-             <div className="bg-[#3c3d43] p-3 pr-6 rounded-[2px] mt-1 shadow-md">
-               <p className="text-white text-[15px] italic leading-snug">{question}</p>
-             </div>
-           ) : (
-             <p className="text-white text-[15px] italic leading-snug">{question}</p>
-           )}
+         <div className="flex flex-col items-start mt-1 text-left">
+           <h4 className="text-[#3c3d43] font-extrabold text-[18px] mb-1 leading-tight uppercase">{name}</h4>
+           <p className="text-[#3c3d43] font-semibold text-[13px] leading-[1.3] whitespace-pre-line">{role}</p>
          </div>
       </div>
     </div>
@@ -53,14 +47,14 @@ const VideoSection = () => {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* -- SUSTAINABILITY INTRO -- */}
         <FadeIn direction="up">
-        <div className="w-full mb-16">
+        <div className="w-full mb-16 flex flex-col items-start text-left">
           <h3 className="text-6xl md:text-[85px] font-bold text-[#ef7918] mb-2 tracking-tight drop-shadow-sm uppercase leading-none">
             Sustainability
           </h3>
           <p className="text-white text-[20px] md:text-[24px] font-bold mb-4 drop-shadow-sm">
             Turning sustainability into competitive advantage
           </p>
-          <div className="w-full md:w-[60%] space-y-5 text-white/90 text-[13px] md:text-[14px] leading-relaxed text-justify mb-16">
+          <div className="w-full md:w-[60%] space-y-5 text-white/90 text-[13px] md:text-[14px] leading-relaxed text-left mb-16">
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus
             </p>
@@ -73,31 +67,29 @@ const VideoSection = () => {
           <VideoCard 
             imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.49.10.png"
             name="Dr. Christoph Balzarek"
-            question="Frage"
+            role="EVP Corporate Development,\nSustainability & Innovation OXEA"
             fallbackSeed="cbx"
-            isBoxedQuestion={false}
             logoType="magenta"
           />
           <VideoCard 
             imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.50.16.png"
             name="HATEM SOLIMAN"
-            question="Which development could become the next sustainability game changer in the chemical industry?"
+            role="Former President Middle East,\nAsia Pacific and Latin America\nRegions Schlumberger"
             fallbackSeed="hsx"
-            isBoxedQuestion={true}
             logoType="magenta"
           />
         </div>
 
         {/* -- DECARBONIZATION INTRO -- */}
         <FadeIn direction="up">
-        <div className="w-full mt-24 pt-10">
+        <div className="w-full mt-24 pt-10 flex flex-col items-end text-right">
           <h3 className="text-5xl md:text-[65px] font-bold text-[#ef7918] mb-4 tracking-tight drop-shadow-sm uppercase">
             Decarbonization
           </h3>
           <p className="text-white text-[20px] md:text-[24px] font-bold mb-4">
             Decarbonization & Clean Energy
           </p>
-          <div className="w-full md:w-[60%] space-y-5 text-white/95 text-[13px] md:text-[14px] leading-relaxed text-justify">
+          <div className="w-full md:w-[60%] space-y-5 text-white/95 text-[13px] md:text-[14px] leading-relaxed text-right">
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus
             </p>
@@ -110,17 +102,15 @@ const VideoSection = () => {
           <VideoCard 
             imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.49.56.png" 
             name="Pieter Boon"
-            question="Why is decarbonization so important – and so difficult to achieve?"
+            role="Member of The Supervisory\nBoard AnQore"
             fallbackSeed="pbx"
-            isBoxedQuestion={false}
             logoType="magenta"
           />
           <VideoCard 
             imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.50.26.png" 
             name="Luca Rosetto"
-            question="Why is the transition to clean energy essential for a future proof chemical industry?"
+            role="Former Executive VP Operations\nRoyal DSM N.V."
             fallbackSeed="lrx"
-            isBoxedQuestion={false}
             logoType="magenta"
           />
         </div>
@@ -133,14 +123,14 @@ const VideoSection = () => {
         </div>
 
         {/* -- INFRASTRUCTURE INTRO -- */}
-        <div className="w-full pt-16">
+        <div className="w-full pt-16 flex flex-col items-start text-left">
           <h3 className="text-5xl md:text-[65px] font-bold text-[#ef7918] mb-4 tracking-tight drop-shadow-sm uppercase">
             Infrastructure
           </h3>
           <p className="text-white text-[20px] md:text-[24px] font-bold mb-4">
             Creating future-proof organizations
           </p>
-          <div className="w-full md:w-[60%] space-y-5 text-white/95 text-[13px] md:text-[14px] leading-relaxed text-justify">
+          <div className="w-full md:w-[60%] space-y-5 text-white/95 text-[13px] md:text-[14px] leading-relaxed text-left">
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
             </p>
@@ -152,38 +142,35 @@ const VideoSection = () => {
           <VideoCard 
             imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.50.26.png" 
             name="Fernando Cruzado"
-            question="Why is future viability a top priority for the industry?"
+            role="VP/Partner & Head of Chemical\nIndustry EMEA EFESO"
             fallbackSeed="fcx"
-            isBoxedQuestion={false}
             logoType="orangeMenu"
           />
           <VideoCard 
             imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.49.10.png" 
             name="Luca Rosetto"
-            question="What skills and competencies do future-oriented leaders possess?"
+            role="Former Executive VP Operations\nRoyal DSM N.V."
             fallbackSeed="lrx2"
-            isBoxedQuestion={false}
             logoType="magenta"
           />
           <VideoCard 
             imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.49.56.png" 
             name="Michiel Van Den Boomen"
-            question="What are key obstacles on the path to a future-proof organization?"
+            role="VP/Partner EFESO"
             fallbackSeed="mvb3"
-            isBoxedQuestion={false}
             logoType="orangeMenu"
           />
         </div>
 
         {/* -- OPERATIONAL EXCELLENCE INTRO -- */}
-        <div className="w-full pt-16">
+        <div className="w-full pt-16 flex flex-col items-end text-right">
           <h3 className="text-5xl md:text-[65px] font-bold text-[#ef7918] mb-4 tracking-tight drop-shadow-sm uppercase leading-none">
             Operational Excellence
           </h3>
           <p className="text-white text-[20px] md:text-[24px] font-bold mb-4 mt-4">
             Accelerating Operational Excellence
           </p>
-          <div className="w-full md:w-[60%] space-y-5 text-white/95 text-[13px] md:text-[14px] leading-relaxed text-justify">
+          <div className="w-full md:w-[60%] space-y-5 text-white/95 text-[13px] md:text-[14px] leading-relaxed text-right">
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
             </p>
@@ -195,17 +182,15 @@ const VideoSection = () => {
           <VideoCard 
             imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.49.10.png" 
             name="Fernando Cruzado"
-            question="How do companies go from being reactive to being in the driver's seat?"
+            role="VP/Partner & Head of Chemical\nIndustry EMEA EFESO"
             fallbackSeed="fc2"
-            isBoxedQuestion={false}
             logoType="orangeMenu"
           />
           <VideoCard 
             imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.49.56.png" 
             name="Michiel Van Den Boomen"
-            question="Why is maintenance excellence essential for the chemical industry?"
+            role="VP/Partner EFESO"
             fallbackSeed="mv2"
-            isBoxedQuestion={false}
             logoType="orangeMenu"
           />
         </div>

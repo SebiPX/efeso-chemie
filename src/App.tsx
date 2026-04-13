@@ -1,6 +1,6 @@
 import NavBar from './components/NavBar';
 import HeroSection from './components/HeroSection';
-import HowItWorksSection from './components/HowItWorksSection';
+
 import TopicsSection from './components/TopicsSection';
 import VideoSection from './components/VideoSection';
 import AboutSection from './components/AboutSection';
@@ -27,7 +27,6 @@ function App() {
         <main className="w-full relative">
           <TopicsSection />
           <VideoSection />
-          <HowItWorksSection />
         </main>
 
       <AboutSection />
