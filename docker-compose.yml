@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: efeso-chemie-app
+    restart: always
+    networks:
+      - proxy-netz
+
+networks:
+  proxy-netz:
+    external: true

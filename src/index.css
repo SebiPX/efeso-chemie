@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Roboto", sans-serif;
+  
+  --color-efeso-dark: #1e1e1e;
+  --color-efeso-accent: #00ffcc; /* Placeholder for cyan/teal accent */
+}
+
+/* Base resets or globals if needed */
+body {
+  font-family: var(--font-sans);
+  background-color: #fff;
+  color: var(--color-efeso-dark);
+}
