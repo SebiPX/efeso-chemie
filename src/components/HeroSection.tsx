@@ -24,17 +24,17 @@ const heroExperts: HeroExpert[] = [
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[100vh] pt-32 pb-20 overflow-hidden flex items-center justify-center">
+    <section className="relative min-h-[100vh] pt-24 pb-10 overflow-hidden flex items-center justify-center">
 
       {/* Main Container - Restricting max width to keep elements closer together like the original 970px layout */}
-      <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-2">
+      <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-0">
         
         {/* HERO TOP ROW (Text Left, Cube Right) */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-10 mb-6 pt-2">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-10 mb-2 pt-0">
           
           {/* Left Side: Slogan & Text */}
           <div className="flex flex-col items-start w-full md:w-[60%]">
-            <h1 className="text-5xl md:text-[65px] lg:text-[72px] font-bold text-white leading-[1.1] tracking-wide uppercase drop-shadow-md mb-6 md:whitespace-nowrap">
+            <h1 className="text-5xl md:text-[65px] lg:text-[72px] font-bold text-white leading-[1.1] tracking-wide uppercase drop-shadow-md mb-3 md:whitespace-nowrap">
               FROM PRESSURE<br />
               <span className="flex items-center gap-5 mt-1">
                 <span>TO <span className="text-[#ef7918]">PROFIT</span></span>
@@ -63,9 +63,9 @@ const HeroSection = () => {
         </div>
 
         {/* HERO BOTTOM ROW (Subheadline only) */}
-        <div className="flex w-full mb-4 px-2 mt-2">
+        <div className="flex w-full mb-2 px-2 mt-0">
           <div className="w-full text-left">
-            <h2 className="text-xl md:text-[22px] text-white font-medium mb-6 leading-[1.4] tracking-wide">
+            <h2 className="text-xl md:text-[22px] text-white font-medium mb-2 leading-[1.4] tracking-wide">
               Capitalizing on Growth Opportunities in the Chemical Industry:<br />
               Recommendations from the <span className="text-[#ef7918] italic font-semibold">EFESO Chemicals Advisory Board EMEA</span>
             </h2>
@@ -73,9 +73,9 @@ const HeroSection = () => {
         </div>
 
         {/* HERO ROW 3 (Experts Grid 5x2) */}
-        <div id="advisory-board" className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-4 gap-y-12 mt-6 w-full pt-4">
+        <div id="advisory-board" className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-4 gap-y-4 mt-2 w-full pt-0">
            {heroExperts.map((expert, idx) => (
-             <FadeIn key={idx} delay={idx * 0.1}>
+             <FadeIn key={idx} delay={idx * 0.1} viewportMargin="50px">
                <div className="flex flex-col items-start group cursor-pointer h-full">
                  
                  {/* Fixed Height Image Container with Hover Crossfade */}

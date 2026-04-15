@@ -6,9 +6,10 @@ interface FadeInProps {
   delay?: number;
   direction?: 'up' | 'down' | 'left' | 'right' | 'none';
   className?: string;
+  viewportMargin?: string;
 }
 
-export const FadeIn = ({ children, delay = 0, direction = 'up', className = '' }: FadeInProps) => {
+export const FadeIn = ({ children, delay = 0, direction = 'up', className = '', viewportMargin = '-20%' }: FadeInProps) => {
   const directions = {
     up: { y: 40, x: 0 },
     down: { y: -40, x: 0 },
@@ -21,7 +22,7 @@ export const FadeIn = ({ children, delay = 0, direction = 'up', className = '' }
     <motion.div
       initial={{ opacity: 0, ...directions[direction] }}
       whileInView={{ opacity: 1, x: 0, y: 0 }}
-      viewport={{ once: true, margin: '-20%' }}
+      viewport={{ once: true, margin: viewportMargin as any }}
       transition={{ duration: 0.8, delay, ease: [0.21, 0.47, 0.32, 0.98] }}
       className={className}
     >

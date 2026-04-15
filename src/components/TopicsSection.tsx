@@ -9,7 +9,7 @@ const topics = [
 
 const TopicsSection = () => {
   return (
-    <section id="topics" className="relative w-full pb-20 overflow-hidden">
+    <section id="topics" className="relative w-full pb-8 overflow-hidden">
       
       {/* Banner removed based on feedback */}
 
@@ -26,7 +26,7 @@ const TopicsSection = () => {
         </div>
 
         {/* 4 Pillars Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 px-4 mb-32">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 px-4 mb-8">
            {topics.map((topic, idx) => (
              <FadeIn key={idx} delay={idx * 0.15}>
                <div className="flex flex-col relative w-full pt-10 pb-40 px-6 bg-gradient-to-b from-[#eb7614] via-[#e8812c]/90 to-transparent hover:-translate-y-2 transition-transform duration-500 rounded-[2px] h-full">

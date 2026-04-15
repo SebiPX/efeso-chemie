@@ -1,7 +1,7 @@
 import { FadeIn } from './FadeIn';
 
 // Reusable VideoCard Component to ensure perfectly uniform styling
-const VideoCard = ({ imageSrc, name, role, fallbackSeed, logoType = 'magenta' }: { imageSrc: string, name: string, role: string, fallbackSeed: string, logoType?: 'magenta' | 'orangeMenu' }) => {
+const VideoCard = ({ imageSrc, name, role, fallbackSeed, logoType }: { imageSrc: string, name: string, role: string, fallbackSeed: string, logoType?: 'magenta' | 'orangeMenu' }) => {
   return (
     <FadeIn direction="up">
     <div className="flex flex-col group cursor-pointer w-full">
@@ -16,20 +16,7 @@ const VideoCard = ({ imageSrc, name, role, fallbackSeed, logoType = 'magenta' }:
       </div>
       
       {/* Lower Meta Block */}
-      <div className="flex items-start gap-4">
-         {/* Logo Icon logic */}
-         {logoType === 'magenta' ? (
-           <div className="w-14 h-14 rounded-full bg-[#ff00ff] flex-shrink-0 flex items-center justify-center shadow-lg mt-1">
-             <span className="text-white text-[12px] font-bold tracking-wide">Logo</span>
-           </div>
-         ) : (
-           <div className="w-14 h-14 bg-[#ef7918] flex-shrink-0 flex flex-col items-center justify-center shadow-lg mt-1 gap-1.5 p-3 rounded-[2px]">
-             <div className="w-full h-[3px] bg-white rounded-full"></div>
-             <div className="w-full h-[3px] bg-white rounded-full"></div>
-             <div className="w-full h-[3px] bg-white rounded-full"></div>
-           </div>
-         )}
-         
+      <div className="flex items-start">
          {/* Text Section */}
          <div className="flex flex-col items-start mt-1 text-left">
            <h4 className="text-[#3c3d43] font-extrabold text-[18px] mb-1 leading-tight uppercase">{name}</h4>
@@ -43,7 +30,7 @@ const VideoCard = ({ imageSrc, name, role, fallbackSeed, logoType = 'magenta' }:
 
 const VideoSection = () => {
   return (
-    <section id="videos" className="relative w-full py-10 bg-transparent overflow-hidden">
+    <section id="videos" className="relative w-full pt-4 pb-10 bg-transparent overflow-hidden">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* -- SUSTAINABILITY INTRO -- */}
         <FadeIn direction="up">
@@ -67,14 +54,14 @@ const VideoSection = () => {
           <VideoCard 
             imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.49.10.png"
             name="Dr. Christoph Balzarek"
-            role="EVP Corporate Development,\nSustainability & Innovation OXEA"
+            role={"EVP Corporate Development,\nSustainability & Innovation OXEA"}
             fallbackSeed="cbx"
             logoType="magenta"
           />
           <VideoCard 
             imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.50.16.png"
             name="HATEM SOLIMAN"
-            role="Former President Middle East,\nAsia Pacific and Latin America\nRegions Schlumberger"
+            role={"Former President Middle East,\nAsia Pacific and Latin America\nRegions Schlumberger"}
             fallbackSeed="hsx"
             logoType="magenta"
           />
@@ -102,25 +89,20 @@ const VideoSection = () => {
           <VideoCard 
             imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.49.56.png" 
             name="Pieter Boon"
-            role="Member of The Supervisory\nBoard AnQore"
+            role={"Member of The Supervisory\nBoard AnQore"}
             fallbackSeed="pbx"
             logoType="magenta"
           />
           <VideoCard 
             imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.50.26.png" 
             name="Luca Rosetto"
-            role="Former Executive VP Operations\nRoyal DSM N.V."
+            role={"Former Executive VP Operations\nRoyal DSM N.V."}
             fallbackSeed="lrx"
             logoType="magenta"
           />
         </div>
 
-        {/* Action Button Segment */}
-        <div className="flex justify-center w-full mb-32 relative z-20">
-          <button className="bg-[#ef7918] text-white font-bold py-3.5 px-8 rounded-[4px] uppercase text-[15px] tracking-wider shadow-lg hover:bg-orange-600 hover:-translate-y-1 transition-all">
-            CONTACT US
-          </button>
-        </div>
+
 
         {/* -- INFRASTRUCTURE INTRO -- */}
         <div className="w-full pt-16 flex flex-col items-start text-left">
@@ -142,14 +124,14 @@ const VideoSection = () => {
           <VideoCard 
             imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.50.26.png" 
             name="Fernando Cruzado"
-            role="VP/Partner & Head of Chemical\nIndustry EMEA EFESO"
+            role={"VP/Partner & Head of Chemical\nIndustry EMEA EFESO"}
             fallbackSeed="fcx"
             logoType="orangeMenu"
           />
           <VideoCard 
             imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.49.10.png" 
             name="Luca Rosetto"
-            role="Former Executive VP Operations\nRoyal DSM N.V."
+            role={"Former Executive VP Operations\nRoyal DSM N.V."}
             fallbackSeed="lrx2"
             logoType="magenta"
           />
@@ -182,7 +164,7 @@ const VideoSection = () => {
           <VideoCard 
             imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.49.10.png" 
             name="Fernando Cruzado"
-            role="VP/Partner & Head of Chemical\nIndustry EMEA EFESO"
+            role={"VP/Partner & Head of Chemical\nIndustry EMEA EFESO"}
             fallbackSeed="fc2"
             logoType="orangeMenu"
           />
@@ -195,12 +177,7 @@ const VideoSection = () => {
           />
         </div>
 
-        {/* Action Button Segment (Operational Excellence) */}
-        <div className="flex justify-center w-full mb-32 relative z-20">
-          <button className="bg-[#ef7918] text-white font-bold py-3.5 px-8 rounded-[4px] uppercase text-[15px] tracking-wider shadow-lg hover:bg-orange-600 hover:-translate-y-1 transition-all">
-            CONTACT US
-          </button>
-        </div>
+
 
       </div>
     </section>
