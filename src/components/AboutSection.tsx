@@ -34,7 +34,7 @@ const AboutSection = () => {
                 </p>
               </div>
 
-               <div>
+               <div id="contact" className="scroll-mt-24">
                  <h4 className="text-sm md:text-base font-bold text-[#ef7918] mb-5 uppercase tracking-wider">Your Contact</h4>
                  <div className="flex items-start gap-6 bg-[#3c3d43]/30 p-6 rounded-[4px] border border-white/5 w-full md:w-max hover:bg-[#3c3d43]/50 transition-colors">
                     <div className="w-24 h-24 rounded-full overflow-hidden shadow-lg border-2 border-[#ef7918]/50 flex-shrink-0 mt-1">
