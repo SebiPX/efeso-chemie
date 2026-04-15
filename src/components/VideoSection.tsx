@@ -56,14 +56,12 @@ const VideoSection = () => {
             name="Dr. Christoph Balzarek"
             role={"EVP Corporate Development,\nSustainability & Innovation OXEA"}
             fallbackSeed="cbx"
-            logoType="magenta"
           />
           <VideoCard 
             imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.50.16.png"
             name="HATEM SOLIMAN"
             role={"Former President Middle East,\nAsia Pacific and Latin America\nRegions Schlumberger"}
             fallbackSeed="hsx"
-            logoType="magenta"
           />
         </div>
 
@@ -91,14 +89,12 @@ const VideoSection = () => {
             name="Pieter Boon"
             role={"Member of The Supervisory\nBoard AnQore"}
             fallbackSeed="pbx"
-            logoType="magenta"
           />
           <VideoCard 
             imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.50.26.png" 
             name="Luca Rosetto"
             role={"Former Executive VP Operations\nRoyal DSM N.V."}
             fallbackSeed="lrx"
-            logoType="magenta"
           />
         </div>
 
@@ -126,21 +122,18 @@ const VideoSection = () => {
             name="Fernando Cruzado"
             role={"VP/Partner & Head of Chemical\nIndustry EMEA EFESO"}
             fallbackSeed="fcx"
-            logoType="orangeMenu"
           />
           <VideoCard 
             imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.49.10.png" 
             name="Luca Rosetto"
             role={"Former Executive VP Operations\nRoyal DSM N.V."}
             fallbackSeed="lrx2"
-            logoType="magenta"
           />
           <VideoCard 
             imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.49.56.png" 
             name="Michiel Van Den Boomen"
             role="VP/Partner EFESO"
             fallbackSeed="mvb3"
-            logoType="orangeMenu"
           />
         </div>
 
@@ -166,14 +159,12 @@ const VideoSection = () => {
             name="Fernando Cruzado"
             role={"VP/Partner & Head of Chemical\nIndustry EMEA EFESO"}
             fallbackSeed="fc2"
-            logoType="orangeMenu"
           />
           <VideoCard 
             imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.49.56.png" 
             name="Michiel Van Den Boomen"
             role="VP/Partner EFESO"
             fallbackSeed="mv2"
-            logoType="orangeMenu"
           />
         </div>
 
