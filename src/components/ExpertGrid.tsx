@@ -1,11 +1,11 @@
 const experts = [
-  { name: "Dr. Christoph Balzarek", role: "Chemicals Advisory Board", image: "/image/1.png" },
-  { name: "Pieter Boon", role: "Chemicals Advisory Board", image: "/image/2.png" },
+  { name: "Dr. Christoph Balzarek", role: "Chemicals Advisory Board", image: "/image/DR_CHRISTOPH_BALZAREK.jpg" },
+  { name: "Pieter Boon", role: "Chemicals Advisory Board", image: "/image/PIETER_BOON.jpg" },
   { name: "Fernando Cruzado", role: "Chemicals Advisory Board", image: "/image/3.png" },
-  { name: "Hatem Soliman", role: "Chemicals Advisory Board", image: "/image/4.png" },
-  { name: "Luca Rosetto", role: "Chemicals Advisory Board", image: "/image/5.png" },
+  { name: "Hatem Soliman", role: "Chemicals Advisory Board", image: "/image/HATEM_SOLIMAN.jpg" },
+  { name: "Luca Rosetto", role: "Chemicals Advisory Board", image: "/image/LUCA_ROSETTO.jpg" },
   { name: "Michiel Van Den Boomen", role: "Chemicals Advisory Board", image: "/image/6.png" },
-  { name: "Expert Placeholder", role: "Chemicals Advisory Board", image: "/image/7.png" },
+  { name: "Harald Gruber", role: "Chemicals Advisory Board", image: "/image/HARALD_GRUBER.jpg" },
   { name: "Expert Placeholder", role: "Chemicals Advisory Board", image: "/image/8.png" }
 ];
 

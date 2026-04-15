@@ -8,18 +8,18 @@ type HeroExpert = {
 };
 
 const heroExperts: HeroExpert[] = [
-  // Bottom row in the original (Externals)
-  { name: "PIETER BOON", title: "Member of The\nSupervisory Board\nAnQore", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
-  { name: "HATEM SOLIMAN", title: "Former President Middle East,\nAsia Pacific and Latin Ameri-\nca Regions Schlumberger", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
-  { name: "LUCA ROSETTO", title: "Former Executive\nVP Operations\nRoyal DSM N.V.", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
-  { name: "DR. CHRISTOPH BALZAREK", title: "EVP Corporate Development,\nSustainability & Innovation\nOXEA", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
-  { name: "HARALD GRUBER", title: "", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
   // Top row in the original (EFESO)
   { name: "FERNANDO CRUZADO", title: "VP/Partner & Head of\nChemical Industry EMEA\nEFESO Management\nConsultants", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
   { name: "DAVID SEDGE", title: "", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
   { name: "JOACHIM KROHN", title: "", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
   { name: "MICHIEL VAN DEN BOOMEN", title: "VP/Partner\nEFESO Management\nConsultants", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
-  { name: "JEROEN VAN DER MEER", title: "", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" }
+  { name: "JEROEN VAN DER MEER", title: "", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
+  // Bottom row in the original (Externals)
+  { name: "PIETER BOON", title: "Member of The\nSupervisory Board\nAnQore", img: "/image/PIETER_BOON.jpg", imgHover: "/image/PIETER_BOON.jpg" },
+  { name: "HATEM SOLIMAN", title: "Former President Middle East,\nAsia Pacific and Latin Ameri-\nca Regions Schlumberger", img: "/image/HATEM_SOLIMAN.jpg", imgHover: "/image/HATEM_SOLIMAN.jpg" },
+  { name: "LUCA ROSETTO", title: "Former Executive\nVP Operations\nRoyal DSM N.V.", img: "/image/LUCA_ROSETTO.jpg", imgHover: "/image/LUCA_ROSETTO.jpg" },
+  { name: "DR. CHRISTOPH BALZAREK", title: "EVP Corporate Development,\nSustainability & Innovation\nOXEA", img: "/image/DR_CHRISTOPH_BALZAREK.jpg", imgHover: "/image/DR_CHRISTOPH_BALZAREK.jpg" },
+  { name: "HARALD GRUBER", title: "", img: "/image/HARALD_GRUBER.jpg", imgHover: "/image/HARALD_GRUBER.jpg" }
 ];
 
 const HeroSection = () => {
