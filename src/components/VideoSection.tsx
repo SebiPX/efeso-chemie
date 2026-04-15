@@ -1,7 +1,7 @@
 import { FadeIn } from './FadeIn';
 
 // Reusable VideoCard Component to ensure perfectly uniform styling
-const VideoCard = ({ imageSrc, name, role, fallbackSeed, logoType }: { imageSrc: string, name: string, role: string, fallbackSeed: string, logoType?: 'magenta' | 'orangeMenu' }) => {
+const VideoCard = ({ imageSrc, name, role, fallbackSeed }: { imageSrc: string, name: string, role: string, fallbackSeed: string }) => {
   return (
     <FadeIn direction="up">
     <div className="flex flex-col group cursor-pointer w-full">
