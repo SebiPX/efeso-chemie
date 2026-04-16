@@ -32,7 +32,7 @@ const AboutSection = () => {
                  <h4 className="text-sm md:text-base font-bold text-[#ef7918] mb-5 uppercase tracking-wider">{t('about.contactHeader')}</h4>
                  <div className="flex items-start gap-6 bg-[#3c3d43]/30 p-6 rounded-[4px] border border-white/5 w-full md:w-max hover:bg-[#3c3d43]/50 transition-colors">
                     <div className="w-24 h-24 rounded-md overflow-hidden border-2 border-[#ef7918]/50 flex-shrink-0 mt-1">
-                      <img src="/image/wuerfel_ohne_frontal.png" alt="Fernando Cruzado Placeholder" className="w-full h-full object-cover" />
+                      <img src="/image/Cruzado.png" alt="Fernando Cruzado Placeholder" className="w-full h-full object-cover" />
                     </div>
                     <div className="text-[13px] text-white/80 leading-snug font-medium flex flex-col justify-center gap-1.5">
                       <span className="font-bold uppercase text-[18px] text-white tracking-wide mb-0.5">Fernando Cruzado</span>

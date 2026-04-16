@@ -10,17 +10,17 @@ type HeroExpert = {
 
 const heroExperts: HeroExpert[] = [
   // Top row (Externals)
-  { name: "DR. CHRISTOPH BALZAREK", title: "EVP Corporate Development, Sustainability & Innovation\nOXEA", img: "/image/DR_CHRISTOPH_BALZAREK.jpg", imgHover: "/image/DR_CHRISTOPH_BALZAREK.jpg" },
-  { name: "PIETER BOON", title: "Member of The Supervisory Board\nAnQore", img: "/image/PIETER_BOON.jpg", imgHover: "/image/PIETER_BOON.jpg" },
-  { name: "HARALD GRUBER", title: "Senior Director Strategic Projects / Board Member\nLenzing AG", img: "/image/HARALD_GRUBER.jpg", imgHover: "/image/HARALD_GRUBER.jpg" },
-  { name: "LUCA ROSETTO", title: "Former Executive VP Operations\nRoyal DSM N.V.", img: "/image/LUCA_ROSETTO.jpg", imgHover: "/image/LUCA_ROSETTO.jpg" },
-  { name: "HATEM SOLIMAN", title: "Former President Middle East, Asia Pacific and Latin America Regions\nSchlumberger", img: "/image/HATEM_SOLIMAN.jpg", imgHover: "/image/HATEM_SOLIMAN.jpg" },
+  { name: "DR. CHRISTOPH BALZAREK", title: "EVP Corporate Development, Sustainability & Innovation\nOXEA", img: "/image/Balzarek.png", imgHover: "/image/DR_CHRISTOPH_BALZAREK.jpg" },
+  { name: "PIETER BOON", title: "Member of The Supervisory Board\nAnQore", img: "/image/Boon.png", imgHover: "/image/PIETER_BOON.jpg" },
+  { name: "HARALD GRUBER", title: "Senior Director Strategic Projects / Board Member\nLenzing AG", img: "/image/Gruber.png", imgHover: "/image/HARALD_GRUBER.jpg" },
+  { name: "LUCA ROSETTO", title: "Former Executive VP Operations\nRoyal DSM N.V.", img: "/image/Rosetto.png", imgHover: "/image/LUCA_ROSETTO.jpg" },
+  { name: "HATEM SOLIMAN", title: "Former President Middle East, Asia Pacific and Latin America Regions\nSchlumberger", img: "/image/Soliman.png", imgHover: "/image/HATEM_SOLIMAN.jpg" },
   // Bottom row (EFESO)
-  { name: "FERNANDO CRUZADO", title: "VP/Partner & Head of Chemical Industry EMEA\nEFESO Management Consultants", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
-  { name: "JOACHIM KROHN", title: "Expert Director\nEFESO Management Consultants", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
-  { name: "DAVID SEDGE", title: "Partner & Head of Chemical Industry Americas\nEFESO Management Consultants", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
-  { name: "MICHIEL VAN DEN BOOMEN", title: "VP/Partner\nEFESO Management Consultants", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
-  { name: "JEROEN VAN DER MEER", title: "Senior Partner\nEFESO Management Consultants", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" }
+  { name: "FERNANDO CRUZADO", title: "VP/Partner & Head of Chemical Industry EMEA\nEFESO Management Consultants", img: "/image/Cruzado.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
+  { name: "JOACHIM KROHN", title: "Expert Director\nEFESO Management Consultants", img: "/image/kron.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
+  { name: "DAVID SEDGE", title: "Partner & Head of Chemical Industry Americas\nEFESO Management Consultants", img: "/image/Sedge.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
+  { name: "MICHIEL VAN DEN BOOMEN", title: "VP/Partner\nEFESO Management Consultants", img: "/image/VanDenBoomen.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
+  { name: "JEROEN VAN DER MEER", title: "Senior Partner\nEFESO Management Consultants", img: "/image/VanDerMeer.png", imgHover: "/image/wuerfel_ohne_isometric.png" }
 ];
 
 const HeroSection = () => {
