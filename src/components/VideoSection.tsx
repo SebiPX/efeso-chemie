@@ -107,14 +107,14 @@ const VideoSection = () => {
         {/* -- DECARBONIZATION VIDEOS -- */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           <VideoCard 
-            imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.49.56.png" 
+            imageSrc="/image/DE-Pieter-TN.png" 
             name="Pieter Boon"
             role={"Member of The Supervisory\nBoard AnQore"}
             fallbackSeed="pbx"
             videoUrl="https://youtu.be/yOB2_34VAQM"
           />
           <VideoCard 
-            imageSrc="/image/DC-Luca-TN.png" 
+            imageSrc="/image/DE-Luca-TN.png" 
             name="Luca Rosetto"
             role={"Former Executive VP Operations\nRoyal DSM N.V."}
             fallbackSeed="lrx"
