@@ -15,7 +15,6 @@ const Footer = () => {
         <div className="flex flex-wrap justify-center gap-4 text-[11px] uppercase tracking-wider text-white/50">
           <a href="#topics" className="hover:text-[#ef7918] transition-colors">{t('footer.topics')}</a>
           <a href="#about" className="hover:text-[#ef7918] transition-colors">{t('footer.about')}</a>
-          <a href="#faq" className="hover:text-[#ef7918] transition-colors">{t('footer.faq')}</a>
           <a href="#contact" className="hover:text-[#ef7918] transition-colors">{t('footer.contact')}</a>
           <span className="hidden md:inline text-white/20">|</span>
           <a href="https://www.efeso.com/privacy-policy/" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">{t('footer.privacy')}</a>

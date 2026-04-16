@@ -74,23 +74,6 @@ const AboutSection = () => {
           </div>
         </FadeIn>
 
-        {/* -- FAQ -- */}
-        <FadeIn direction="up">
-          <div className="mb-16" id="faq">
-          <h2 className="text-4xl md:text-[50px] font-bold text-white mb-12 tracking-tight uppercase">
-            {t('about.faqHeader')}
-          </h2>
-          <ul className="space-y-6 text-[14px] font-medium text-white/90">
-            <li className="cursor-pointer hover:text-[#ef7918] transition-colors">{t('about.faq1')}</li>
-            <li className="cursor-pointer hover:text-[#ef7918] transition-colors">{t('about.faq2')}</li>
-            <li className="cursor-pointer hover:text-[#ef7918] transition-colors">{t('about.faq3')}</li>
-            <li className="cursor-pointer hover:text-[#ef7918] transition-colors">{t('about.faq4')}</li>
-          </ul>
-        </div>
-        </FadeIn>
-
-
-
       </div>
     </section>
   );

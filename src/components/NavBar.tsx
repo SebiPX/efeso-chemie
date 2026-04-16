@@ -38,7 +38,7 @@ const NavBar = () => {
           </div>
 
           <div className="hidden md:flex space-x-8 items-center">
-            {['Advisory Board', 'Topics', 'About', 'FAQ', 'Contact'].map((item) => {
+            {['Advisory Board', 'Topics', 'About', 'Contact'].map((item) => {
               const dictKey = item === 'Advisory Board' ? 'advisoryBoard' : item.toLowerCase();
               return (
               <a

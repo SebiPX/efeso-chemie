@@ -7,11 +7,11 @@ export const translations = {
       en: 'Advisory Board'
     },
     topics: {
-      de: 'Topics',
+      de: 'Themen',
       en: 'Topics'
     },
     about: {
-      de: 'About',
+      de: 'Über EFESO',
       en: 'About'
     },
     faq: {
@@ -19,7 +19,7 @@ export const translations = {
       en: 'FAQ'
     },
     contact: {
-      de: 'Contact',
+      de: 'Kontakt',
       en: 'Contact'
     }
   },
@@ -174,7 +174,7 @@ export const translations = {
       de: 'Die Arbeit von EFESO wird regelmäßig für ihre Ergebnisqualität, Effizienz und den <a href="https://www.roi-international.com/glossary/innovation" target="_blank" rel="noreferrer" class="text-white font-bold hover:underline transition-all">Innovationsgrad</a> ausgezeichnet und erreicht Spitzenplatzierungen in bedeutenden Branchen-Rankings. Seit 2013 prämiert EFESO die besten Praxislösungen der industriellen Digitalisierung mit dem <a href="https://www.industrie40award.com/" target="_blank" rel="noreferrer" class="text-white font-bold hover:underline transition-all">INDUSTRIE 4.0 AWARD</a>, der zu den renommiertesten internationalen Industriepreisen zählt.',
       en: 'EFESO\'s work is regularly recognized for the high quality of its results and <a href="https://www.roi-international.com/glossary/efficiency" target="_blank" rel="noreferrer" class="text-white font-bold hover:underline transition-all">efficiency</a>, as well the ability to deliver <a href="https://www.roi-international.com/glossary/innovation" target="_blank" rel="noreferrer" class="text-white font-bold hover:underline transition-all">innovation</a>, consistently reflected in high major industry rankings. Since 2013, EFESO has been awarding the best practical solutions in industrial digitalization with the <a href="https://www.industrie40award.com/" target="_blank" rel="noreferrer" class="text-white font-bold hover:underline transition-all">INDUSTRIE 4.0 AWARD</a>, which is one of the most prestigious international industry awards.'
     },
-    contactHeader: { de: 'Your Contact', en: 'Your Contact' },
+    contactHeader: { de: 'Kontakt', en: 'Your Contact' },
     linkedin: { de: 'LinkedIn Profil', en: 'LinkedIn Profil' },
     faqHeader: { de: 'FAQ', en: 'FAQ' },
     faq1: { de: 'Question 1 XXX', en: 'Question 1 XXX' },
@@ -183,10 +183,10 @@ export const translations = {
     faq4: { de: 'Question 4 XXX', en: 'Question 4 XXX' },
   },
   footer: {
-    topics: { de: 'Topics', en: 'Topics' },
-    about: { de: 'About EFESO', en: 'About EFESO' },
+    topics: { de: 'Themen', en: 'Topics' },
+    about: { de: 'Über EFESO', en: 'About EFESO' },
     faq: { de: 'FAQ', en: 'FAQ' },
-    contact: { de: 'Contact', en: 'Contact' },
+    contact: { de: 'Kontakt', en: 'Contact' },
     privacy: { de: 'Privacy Policy', en: 'Privacy Policy' },
     legal: { de: 'Legal Notice', en: 'Legal Notice' },
     rights: { de: 'All rights reserved.', en: 'All rights reserved.' }

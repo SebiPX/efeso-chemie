@@ -12,7 +12,6 @@ const heroExperts: HeroExpert[] = [
   // Top row (Externals)
   { name: "DR. CHRISTOPH BALZAREK", title: "EVP Corporate Development, Sustainability & Innovation\nOXEA", img: "/image/Balzarek.png", imgHover: "/image/DR_CHRISTOPH_BALZAREK.jpg" },
   { name: "PIETER BOON", title: "Member of The Supervisory Board\nAnQore", img: "/image/Boon.png", imgHover: "/image/PIETER_BOON.jpg" },
-  { name: "HARALD GRUBER", title: "Senior Director Strategic Projects / Board Member\nLenzing AG", img: "/image/Gruber.png", imgHover: "/image/HARALD_GRUBER.jpg" },
   { name: "LUCA ROSETTO", title: "Former Executive VP Operations\nRoyal DSM N.V.", img: "/image/Rosetto.png", imgHover: "/image/LUCA_ROSETTO.jpg" },
   { name: "HATEM SOLIMAN", title: "Former President Middle East, Asia Pacific and Latin America Regions\nSchlumberger", img: "/image/Soliman.png", imgHover: "/image/HATEM_SOLIMAN.jpg" },
   // Bottom row (EFESO)
