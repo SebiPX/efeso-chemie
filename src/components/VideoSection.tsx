@@ -188,14 +188,14 @@ const VideoSection = () => {
         {/* -- OPERATIONAL EXCELLENCE VIDEOS -- */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           <VideoCard 
-            imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.49.10.png" 
+            imageSrc="/image/OP-Fernando-TN.png" 
             name="Fernando Cruzado"
             role={"VP/Partner & Head of Chemical Industry EMEA\nEFESO Management Consultants"}
             fallbackSeed="fc2"
             videoUrl="https://youtu.be/P7Qlk5Cb-qc"
           />
           <VideoCard 
-            imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.49.56.png" 
+            imageSrc="/image/OP-Michiel-TN.png" 
             name="Michiel Van Den Boomen"
             role={"VP/Partner\nEFESO Management Consultants"}
             fallbackSeed="mv2"
