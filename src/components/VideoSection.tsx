@@ -1,10 +1,14 @@
 import { FadeIn } from './FadeIn';
 
 // Reusable VideoCard Component to ensure perfectly uniform styling
-const VideoCard = ({ imageSrc, name, role, fallbackSeed }: { imageSrc: string, name: string, role: string, fallbackSeed: string }) => {
+const VideoCard = ({ imageSrc, name, role, fallbackSeed, videoUrl }: { imageSrc: string, name: string, role: string, fallbackSeed: string, videoUrl?: string }) => {
+  const isVideo = !!videoUrl;
+  const Wrapper = isVideo ? "a" : "div";
+  const wrapperProps = isVideo ? { href: videoUrl, target: "_blank", rel: "noreferrer" } : {};
+
   return (
     <FadeIn direction="up">
-    <div className="flex flex-col group cursor-pointer w-full">
+    <Wrapper {...(wrapperProps as any)} className="flex flex-col group cursor-pointer w-full">
       {/* Thumbnail Container */}
       <div className="w-full relative overflow-hidden rounded-md shadow-lg mb-6 transform group-hover:scale-[1.02] transition-transform duration-500">
         <img 
@@ -13,24 +17,31 @@ const VideoCard = ({ imageSrc, name, role, fallbackSeed }: { imageSrc: string, n
           alt={`${name} Video`}
           onError={(e) => { (e.target as HTMLImageElement).src = `https://picsum.photos/seed/${fallbackSeed}/800/500` }}
         />
+        {isVideo && (
+          <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-500 flex items-center justify-center">
+            <div className="w-14 h-14 md:w-16 md:h-16 bg-[#ef7918]/90 rounded-full flex items-center justify-center transform group-hover:scale-110 group-hover:bg-[#ef7918] transition-all duration-500 shadow-lg">
+              <svg className="w-7 h-7 md:w-8 md:h-8 text-white ml-2" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+        )}
       </div>
       
       {/* Lower Meta Block */}
       <div className="flex items-start">
          {/* Text Section */}
          <div className="flex flex-col items-start mt-1 text-left">
-           <h4 className="text-[#3c3d43] font-extrabold text-[18px] mb-1 leading-tight uppercase">{name}</h4>
+           <h4 className="text-[#3c3d43] font-extrabold text-[18px] mb-1 leading-tight uppercase group-hover:text-[#ef7918] transition-colors duration-300">{name}</h4>
            <p className="text-[#3c3d43] font-semibold text-[13px] leading-[1.3] whitespace-pre-line">{role}</p>
          </div>
       </div>
-    </div>
+    </Wrapper>
     </FadeIn>
   );
 };
 
 const VideoSection = () => {
   return (
-    <section id="videos" className="relative w-full py-20 bg-transparent overflow-hidden">
+    <section id="videos" className="relative w-full py-12 bg-transparent overflow-hidden">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* -- SUSTAINABILITY INTRO -- */}
         <FadeIn direction="up">
@@ -59,18 +70,20 @@ const VideoSection = () => {
             name="Dr. Christoph Balzarek"
             role={"EVP Corporate Development,\nSustainability & Innovation OXEA"}
             fallbackSeed="cbx"
+            videoUrl="https://youtu.be/zFNR5h5E818"
           />
           <VideoCard 
             imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.50.16.png"
             name="HATEM SOLIMAN"
             role={"Former President Middle East,\nAsia Pacific and Latin America\nRegions Schlumberger"}
             fallbackSeed="hsx"
+            videoUrl="https://youtu.be/WvGdnosMibI"
           />
         </div>
 
         {/* -- DECARBONIZATION INTRO -- */}
         <FadeIn direction="up">
-        <div id="decarbonization" className="w-full mt-32 mb-12 flex flex-col items-end text-right scroll-mt-32">
+        <div id="decarbonization" className="w-full mt-20 mb-12 flex flex-col items-end text-right scroll-mt-32">
           <h3 className="text-5xl md:text-[65px] font-bold text-[#ef7918] mb-4 tracking-tight drop-shadow-sm uppercase">
             DEKARBONISIERUNG &<br /> CLEAN ENERGY
           </h3>
@@ -95,19 +108,21 @@ const VideoSection = () => {
             name="Pieter Boon"
             role={"Member of The Supervisory\nBoard AnQore"}
             fallbackSeed="pbx"
+            videoUrl="https://youtu.be/yOB2_34VAQM"
           />
           <VideoCard 
             imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.50.26.png" 
             name="Luca Rosetto"
             role={"Former Executive VP Operations\nRoyal DSM N.V."}
             fallbackSeed="lrx"
+            videoUrl="https://youtu.be/qaIDQ8FJIpI"
           />
         </div>
 
 
 
         {/* -- INFRASTRUCTURE INTRO -- */}
-        <div id="infrastructure" className="w-full mt-32 mb-12 flex flex-col items-start text-left scroll-mt-32">
+        <div id="infrastructure" className="w-full mt-20 mb-12 flex flex-col items-start text-left scroll-mt-32">
           <h3 className="text-5xl md:text-[65px] font-bold text-[#ef7918] mb-4 tracking-tight drop-shadow-sm uppercase">
             ZUKUNFTSSICHERE ORGANISATION
           </h3>
@@ -131,23 +146,26 @@ const VideoSection = () => {
             name="Fernando Cruzado"
             role={"VP/Partner & Head of Chemical Industry EMEA\nEFESO Management Consultants"}
             fallbackSeed="fcx"
+            videoUrl="https://youtu.be/crR9sV7VvUU"
           />
           <VideoCard 
             imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.49.10.png" 
             name="Luca Rosetto"
             role={"Former Executive VP Operations\nRoyal DSM N.V."}
             fallbackSeed="lrx2"
+            videoUrl="https://youtu.be/PP-vIJ-HaAE"
           />
           <VideoCard 
             imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.49.56.png" 
             name="Michiel Van Den Boomen"
             role={"VP/Partner\nEFESO Management Consultants"}
             fallbackSeed="mvb3"
+            videoUrl="https://youtu.be/pDy80kAh1J8"
           />
         </div>
 
         {/* -- OPERATIONAL EXCELLENCE INTRO -- */}
-        <div id="operational-excellence" className="w-full mt-32 mb-12 flex flex-col items-end text-right scroll-mt-32">
+        <div id="operational-excellence" className="w-full mt-20 mb-12 flex flex-col items-end text-right scroll-mt-32">
           <h3 className="text-5xl md:text-[65px] font-bold text-[#ef7918] mb-4 tracking-tight drop-shadow-sm uppercase leading-none">
             OPERATIONAL EXCELLENCE (OPEX)
           </h3>
@@ -171,12 +189,14 @@ const VideoSection = () => {
             name="Fernando Cruzado"
             role={"VP/Partner & Head of Chemical Industry EMEA\nEFESO Management Consultants"}
             fallbackSeed="fc2"
+            videoUrl="https://youtu.be/P7Qlk5Cb-qc"
           />
           <VideoCard 
             imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.49.56.png" 
             name="Michiel Van Den Boomen"
             role={"VP/Partner\nEFESO Management Consultants"}
             fallbackSeed="mv2"
+            videoUrl="https://youtu.be/d0r-7xpkg4E"
           />
         </div>
 

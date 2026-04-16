@@ -2,12 +2,12 @@ import { FadeIn } from './FadeIn';
 
 const AboutSection = () => {
   return (
-    <section id="about" className="relative w-full py-20 bg-transparent overflow-hidden">
+    <section id="about" className="relative w-full py-12 bg-transparent overflow-hidden">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* -- ABOUT EFESO -- */}
         <FadeIn direction="up">
-          <div className="mb-32 flex flex-col md:flex-row gap-12">
+          <div className="mb-16 flex flex-col md:flex-row gap-12">
             
             {/* Left Column: Text & Persons */}
             <div className="w-full md:w-1/2">
@@ -20,16 +20,16 @@ const AboutSection = () => {
                   Real Results, Together
                 </p>
                 <p>
-                  EFESO Management Consultants ist mit rund 1.000 Mitarbeitenden an 35 Standorten weltweit die führende internationale <a href="https://www.roi-international.com/glossary/operations" target="_blank" rel="noreferrer" className="text-[#b04b00] font-bold hover:underline transition-all">Operations-Beratung</a> und Transformationspartner für die produzierende Industrie. Gemeinsam mit unseren Kunden setzen wir Standards für Performance, <a href="https://www.roi-international.com/glossary/resilience" target="_blank" rel="noreferrer" className="text-[#b04b00] font-bold hover:underline transition-all">Resilienz</a> und Produktivität und ermöglichen eine signifikante Wertsteigerung in der gesamten Wertschöpfungskette.
+                  EFESO Management Consultants ist mit rund 1.000 Mitarbeitenden an 35 Standorten weltweit die führende internationale <a href="https://www.roi-international.com/glossary/operations" target="_blank" rel="noreferrer" className="text-white font-bold hover:underline transition-all">Operations-Beratung</a> und Transformationspartner für die produzierende Industrie. Gemeinsam mit unseren Kunden setzen wir Standards für Performance, <a href="https://www.roi-international.com/glossary/resilience" target="_blank" rel="noreferrer" className="text-white font-bold hover:underline transition-all">Resilienz</a> und Produktivität und ermöglichen eine signifikante Wertsteigerung in der gesamten Wertschöpfungskette.
                 </p>
                 <p>
-                  Um diese Ziele zu erreichen, denken wir Produkte E-2-E von der Idee bis zur Industrialisierung, erstellen und realisieren ganzheitliche Smart Factory Konzepte, adaptive <a href="https://www.roi-international.com/glossary/supply-chain" target="_blank" rel="noreferrer" className="text-[#b04b00] font-bold hover:underline transition-all">Supply Chains</a> sowie neue Betriebs- und Organisationsmodelle. Bei der Gestaltung und Etablierung <a href="https://www.roi-international.com/glossary/operational-excellence" target="_blank" rel="noreferrer" className="text-[#b04b00] font-bold hover:underline transition-all">operativer Prozesse</a> stehen für uns <a href="https://www.roi-international.com/glossary/efficiency" target="_blank" rel="noreferrer" className="text-[#b04b00] font-bold hover:underline transition-all">Effizienz</a>, Kostenoptimierung und Kundenorientierung im Vordergrund. In all diesen Bereichen erschließen wir die Potenziale der industriellen Digitalisierung.
+                  Um diese Ziele zu erreichen, denken wir Produkte E-2-E von der Idee bis zur Industrialisierung, erstellen und realisieren ganzheitliche Smart Factory Konzepte, adaptive <a href="https://www.roi-international.com/glossary/supply-chain" target="_blank" rel="noreferrer" className="text-white font-bold hover:underline transition-all">Supply Chains</a> sowie neue Betriebs- und Organisationsmodelle. Bei der Gestaltung und Etablierung <a href="https://www.roi-international.com/glossary/operational-excellence" target="_blank" rel="noreferrer" className="text-white font-bold hover:underline transition-all">operativer Prozesse</a> stehen für uns <a href="https://www.roi-international.com/glossary/efficiency" target="_blank" rel="noreferrer" className="text-white font-bold hover:underline transition-all">Effizienz</a>, Kostenoptimierung und Kundenorientierung im Vordergrund. In all diesen Bereichen erschließen wir die Potenziale der industriellen Digitalisierung.
                 </p>
                 <p>
                   Die Nachhaltigkeit dieser Veränderungen sichern wir durch Qualifizierungsprogramme und Führungskräfteentwicklung ab. Darüber hinaus unterhalten wir zahlreiche strategische Partnerschaften zu taktgebenden Technologieunternehmen und hochspezialisierten Experten, um für unsere Kunden den Zugang zu Top-Knowhow in relevanten Bereichen zu ermöglichen.
                 </p>
                 <p>
-                  Die Arbeit von EFESO wird regelmäßig für ihre Ergebnisqualität, Effizienz und den <a href="https://www.roi-international.com/glossary/innovation" target="_blank" rel="noreferrer" className="text-[#b04b00] font-bold hover:underline transition-all">Innovationsgrad</a> ausgezeichnet und erreicht Spitzenplatzierungen in bedeutenden Branchen-Rankings. Seit 2013 prämiert EFESO die besten Praxislösungen der industriellen Digitalisierung mit dem <a href="https://www.industrie40award.com/" target="_blank" rel="noreferrer" className="text-[#b04b00] font-bold hover:underline transition-all">INDUSTRIE 4.0 AWARD</a>, der zu den renommiertesten internationalen Industriepreisen zählt.
+                  Die Arbeit von EFESO wird regelmäßig für ihre Ergebnisqualität, Effizienz und den <a href="https://www.roi-international.com/glossary/innovation" target="_blank" rel="noreferrer" className="text-white font-bold hover:underline transition-all">Innovationsgrad</a> ausgezeichnet und erreicht Spitzenplatzierungen in bedeutenden Branchen-Rankings. Seit 2013 prämiert EFESO die besten Praxislösungen der industriellen Digitalisierung mit dem <a href="https://www.industrie40award.com/" target="_blank" rel="noreferrer" className="text-white font-bold hover:underline transition-all">INDUSTRIE 4.0 AWARD</a>, der zu den renommiertesten internationalen Industriepreisen zählt.
                 </p>
               </div>
 
@@ -81,8 +81,8 @@ const AboutSection = () => {
 
         {/* -- FAQ -- */}
         <FadeIn direction="up">
-          <div className="mb-32" id="faq">
-          <h2 className="text-4xl md:text-[50px] font-bold text-white mb-20 tracking-tight uppercase">
+          <div className="mb-16" id="faq">
+          <h2 className="text-4xl md:text-[50px] font-bold text-white mb-12 tracking-tight uppercase">
             FAQ
           </h2>
           <ul className="space-y-6 text-[14px] font-medium text-white/90">

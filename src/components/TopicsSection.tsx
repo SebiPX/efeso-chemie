@@ -2,21 +2,21 @@ import { FadeIn } from './FadeIn';
 
 const topics = [
   { title: "NACHHALTIGKEIT", text: "Als Lösungsanbieter neue Märkte erschließen und die eigene Produktion kontinuierlich optimieren.", link: "#sustainability" },
-  { title: "ZUKUNFTSICHERE\nORGANISATION", text: "Unternehmen auf die Zukunft ausrichten und von effektiven Prozessen profitieren.", link: "#infrastructure" },
   { title: "DEKARBONISIERUNG\n& CLEAN ENERGY", text: "Transformationserfolge erzielen und über Organisationseinheiten und Werke skalieren.", link: "#decarbonization" },
+  { title: "ZUKUNFTSSICHERE\nORGANISATION", text: "Unternehmen auf die Zukunft ausrichten und von effektiven Prozessen profitieren.", link: "#infrastructure" },
   { title: "OPERATIONAL\nEXCELLENCE", text: "Veränderungen vorantreiben und kontinuierliche Verbesserung etablieren.", link: "#operational-excellence" }
 ];
 
 const TopicsSection = () => {
   return (
-    <section id="topics" className="relative w-full pt-4 pb-20 overflow-hidden">
+    <section id="topics" className="relative w-full pt-6 pb-12 overflow-hidden">
       
       {/* Banner removed based on feedback */}
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         
         {/* Intro Text Box */}
-        <div className="flex flex-col mb-24 px-4">
+        <div className="flex flex-col mb-12 px-4">
           <div className="w-full text-white/90 text-[14px] md:text-[15px] leading-relaxed text-left font-light space-y-4">
             <p>
               Das EFESO Chemicals Advisory Board EMEA unterstützt EFESO bei der Weiterentwicklung relevanter Beratungsansätze und der erfolgreichen Positionierung im Markt. Es stellt sicher, dass zentrale Fragestellungen und strukturelle Herausforderungen der Industrie frühzeitig identifiziert und in relevante, wirksame Lösungen übersetzt werden.
@@ -28,7 +28,7 @@ const TopicsSection = () => {
         </div>
 
         {/* Title & Button Row */}
-        <div className="flex flex-col md:flex-row items-center mb-16 px-4">
+        <div className="flex flex-col md:flex-row items-center mb-12 px-4">
           <h2 className="text-5xl md:text-[65px] font-bold text-white uppercase leading-none drop-shadow-sm text-left w-full">
             WACHSTUMSCHANCEN NUTZEN
           </h2>

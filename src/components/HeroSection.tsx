@@ -8,29 +8,29 @@ type HeroExpert = {
 };
 
 const heroExperts: HeroExpert[] = [
-  // Top row in the original (EFESO)
-  { name: "FERNANDO CRUZADO", title: "VP/Partner & Head of Chemical Industry EMEA\nEFESO Management Consultants", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
-  { name: "DAVID SEDGE", title: "Partner & Head of Chemical Industry Americas\nEFESO Management Consultants", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
-  { name: "JOACHIM KROHN", title: "Expert Director\nEFESO Management Consultants", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
-  { name: "MICHIEL VAN DEN BOOMEN", title: "VP/Partner\nEFESO Management Consultants", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
-  { name: "JEROEN VAN DER MEER", title: "Senior Partner\nEFESO Management Consultants", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
-  // Bottom row in the original (Externals)
-  { name: "PIETER BOON", title: "Member of The Supervisory Board\nAnQore", img: "/image/PIETER_BOON.jpg", imgHover: "/image/PIETER_BOON.jpg" },
-  { name: "HATEM SOLIMAN", title: "Former President Middle East, Asia Pacific and Latin America Regions\nSchlumberger", img: "/image/HATEM_SOLIMAN.jpg", imgHover: "/image/HATEM_SOLIMAN.jpg" },
-  { name: "LUCA ROSETTO", title: "Former Executive VP Operations\nRoyal DSM N.V.", img: "/image/LUCA_ROSETTO.jpg", imgHover: "/image/LUCA_ROSETTO.jpg" },
+  // Top row (Externals)
   { name: "DR. CHRISTOPH BALZAREK", title: "EVP Corporate Development, Sustainability & Innovation\nOXEA", img: "/image/DR_CHRISTOPH_BALZAREK.jpg", imgHover: "/image/DR_CHRISTOPH_BALZAREK.jpg" },
-  { name: "HARALD GRUBER", title: "Senior Director Strategic Projects / Board Member\nLenzing AG", img: "/image/HARALD_GRUBER.jpg", imgHover: "/image/HARALD_GRUBER.jpg" }
+  { name: "PIETER BOON", title: "Member of The Supervisory Board\nAnQore", img: "/image/PIETER_BOON.jpg", imgHover: "/image/PIETER_BOON.jpg" },
+  { name: "HARALD GRUBER", title: "Senior Director Strategic Projects / Board Member\nLenzing AG", img: "/image/HARALD_GRUBER.jpg", imgHover: "/image/HARALD_GRUBER.jpg" },
+  { name: "LUCA ROSETTO", title: "Former Executive VP Operations\nRoyal DSM N.V.", img: "/image/LUCA_ROSETTO.jpg", imgHover: "/image/LUCA_ROSETTO.jpg" },
+  { name: "HATEM SOLIMAN", title: "Former President Middle East, Asia Pacific and Latin America Regions\nSchlumberger", img: "/image/HATEM_SOLIMAN.jpg", imgHover: "/image/HATEM_SOLIMAN.jpg" },
+  // Bottom row (EFESO)
+  { name: "FERNANDO CRUZADO", title: "VP/Partner & Head of Chemical Industry EMEA\nEFESO Management Consultants", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
+  { name: "JOACHIM KROHN", title: "Expert Director\nEFESO Management Consultants", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
+  { name: "DAVID SEDGE", title: "Partner & Head of Chemical Industry Americas\nEFESO Management Consultants", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
+  { name: "MICHIEL VAN DEN BOOMEN", title: "VP/Partner\nEFESO Management Consultants", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" },
+  { name: "JEROEN VAN DER MEER", title: "Senior Partner\nEFESO Management Consultants", img: "/image/wuerfel_ohne_frontal.png", imgHover: "/image/wuerfel_ohne_isometric.png" }
 ];
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[100vh] pt-24 pb-20 overflow-hidden flex items-center justify-center">
+    <section className="relative min-h-[100vh] pt-24 pb-6 overflow-hidden flex items-center justify-center">
 
       {/* Main Container - Restricting max width to keep elements closer together like the original 970px layout */}
       <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-0">
         
         {/* HERO TOP ROW (Text Left, Cube Right) */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-10 mb-2 pt-0">
+        <div className="flex flex-col md:flex-row items-start justify-between gap-10 mb-2 pt-0">
           
           {/* Left Side: Slogan & Text */}
           <div className="flex flex-col items-start w-full md:w-[60%]">
@@ -67,7 +67,7 @@ const HeroSection = () => {
         <div className="flex w-full mb-2 px-2 mt-0">
           <div className="w-full text-left">
             <h2 className="text-xl md:text-[22px] text-white font-medium mb-2 leading-[1.4] tracking-wide">
-              <span className="text-[#ef7918] italic font-semibold">EFESO Chemicals Advisory Board EMEA</span>
+              <span className="bg-[#ef7918] text-white px-4 py-1.5 rounded-sm font-semibold shadow-sm inline-block tracking-wide">EFESO Chemicals Advisory Board EMEA</span>
             </h2>
           </div>
         </div>

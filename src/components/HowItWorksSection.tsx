@@ -2,13 +2,13 @@ import { FadeIn } from './FadeIn';
 
 const HowItWorksSection = () => {
   return (
-    <section id="how-it-works" className="relative w-full py-20 bg-transparent overflow-hidden">
+    <section id="how-it-works" className="relative w-full py-12 bg-transparent overflow-hidden">
       <FadeIn direction="up">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col items-center md:items-start text-center md:text-left">
           
 
 
-          <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 w-full mb-20">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 w-full mb-12">
             
             {/* Cube 1 */}
             <div className="relative w-64 h-64 md:w-[300px] md:h-[300px] flex justify-center items-center transition-transform duration-500 hover:scale-105">
