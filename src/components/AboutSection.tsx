@@ -70,7 +70,7 @@ const AboutSection = () => {
             {/* Right Column: 3D Cubes Image */}
             <div className="w-full md:w-1/2 flex items-center justify-center md:justify-end mt-10 md:mt-0 relative">
               <img 
-                src="/image/wuerfel_efeso.png" 
+                src="/image/Würfel_EFESO2-alpha.png" 
                 alt="EFESO Stacked Cubes" 
                 className="w-full md:w-[115%] max-w-none h-auto object-contain md:translate-x-12 lg:translate-x-20 hover:scale-[1.03] transition-transform duration-500 z-10"
               />
