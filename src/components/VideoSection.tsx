@@ -69,7 +69,7 @@ const VideoSection = () => {
         {/* -- SUSTAINABILITY VIDEOS -- */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           <VideoCard 
-            imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.49.10.png"
+            imageSrc="/image/NA-Christoph-TN.png"
             name="Dr. Christoph Balzarek"
             role={"EVP Corporate Development,\nSustainability & Innovation OXEA"}
             fallbackSeed="cbx"
