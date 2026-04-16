@@ -156,7 +156,7 @@ export const translations = {
     }
   },
   about: {
-    headline: { de: 'ABOUT EFESO', en: 'About EFESO' },
+    headline: { de: 'ÜBER EFESO', en: 'About EFESO' },
     sub: { de: 'Real Results, Together', en: 'EFESO Management Consultants\nThe leading global pure play operations consultancy' },
     p1: { 
       de: 'EFESO Management Consultants ist mit rund 1.000 Mitarbeitenden an 35 Standorten weltweit die führende internationale <a href="https://www.roi-international.com/glossary/operations" target="_blank" rel="noreferrer" class="text-white font-bold hover:underline transition-all">Operations-Beratung</a> und Transformationspartner für die produzierende Industrie. Gemeinsam mit unseren Kunden setzen wir Standards für Performance, <a href="https://www.roi-international.com/glossary/resilience" target="_blank" rel="noreferrer" class="text-white font-bold hover:underline transition-all">Resilienz</a> und Produktivität und ermöglichen eine signifikante Wertsteigerung in der gesamten Wertschöpfungskette.',
