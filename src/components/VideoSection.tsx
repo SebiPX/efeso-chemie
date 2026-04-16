@@ -145,7 +145,7 @@ const VideoSection = () => {
         {/* -- INFRASTRUCTURE VIDEOS -- */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           <VideoCard 
-            imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.50.26.png" 
+            imageSrc="/image/ZO-Fernando-TN2.png" 
             name="Fernando Cruzado"
             role={"VP/Partner & Head of Chemical Industry EMEA\nEFESO Management Consultants"}
             fallbackSeed="fcx"
