@@ -76,7 +76,7 @@ const VideoSection = () => {
             videoUrl="https://youtu.be/zFNR5h5E818"
           />
           <VideoCard 
-            imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.50.16.png"
+            imageSrc="/image/NA-Hatem-TN.png"
             name="HATEM SOLIMAN"
             role={"Former President Middle East,\nAsia Pacific and Latin America\nRegions Schlumberger"}
             fallbackSeed="hsx"
