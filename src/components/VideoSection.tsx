@@ -159,7 +159,7 @@ const VideoSection = () => {
             videoUrl="https://youtu.be/PP-vIJ-HaAE"
           />
           <VideoCard 
-            imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.49.56.png" 
+            imageSrc="/image/ZO-Michiel-TN.png" 
             name="Michiel Van Den Boomen"
             role={"VP/Partner\nEFESO Management Consultants"}
             fallbackSeed="mvb3"
