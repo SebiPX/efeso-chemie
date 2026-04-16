@@ -55,7 +55,7 @@ const HeroSection = () => {
           {/* Right Side: Ice Cube */}
           <div className="w-full md:w-[45%] flex justify-end shrink-0">
              <img 
-               src="/image/wuerfel-ef.png" 
+               src="/image/wuerfel-efeso-new.png" 
                alt="Efeso Ice Cube" 
                className="w-full max-w-[400px] md:max-w-[480px] h-auto object-contain transform hover:-translate-y-2 md:translate-x-8 lg:translate-x-16 transition-transform duration-700"
              />
