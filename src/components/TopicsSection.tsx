@@ -19,7 +19,7 @@ const TopicsSection = () => {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         
         {/* Intro Text Box */}
-        <div className="flex flex-col mb-12 px-4">
+        <div className="flex flex-col mb-20 px-4">
           <div className="w-full text-white/90 text-[14px] md:text-[15px] leading-relaxed text-left font-light space-y-4">
             <p>
               {t('topics.intro1')}
