@@ -15,9 +15,8 @@ const Footer = () => {
           <a href="#faq" className="hover:text-[#ef7918] transition-colors">FAQ</a>
           <a href="#contact" className="hover:text-[#ef7918] transition-colors">Contact</a>
           <span className="hidden md:inline text-white/20">|</span>
-          <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-          <a href="#" className="hover:text-white transition-colors">Imprint</a>
-          <a href="#" className="hover:text-white transition-colors">Compliance</a>
+          <a href="https://www.efeso.com/privacy-policy/" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="https://www.efeso.com/legal-notice/" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">Legal Notice</a>
         </div>
 
         {/* Right: Copyright */}

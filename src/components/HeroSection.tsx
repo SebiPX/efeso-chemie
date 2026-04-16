@@ -19,12 +19,12 @@ const heroExperts: HeroExpert[] = [
   { name: "HATEM SOLIMAN", title: "Former President Middle East,\nAsia Pacific and Latin Ameri-\nca Regions Schlumberger", img: "/image/HATEM_SOLIMAN.jpg", imgHover: "/image/HATEM_SOLIMAN.jpg" },
   { name: "LUCA ROSETTO", title: "Former Executive\nVP Operations\nRoyal DSM N.V.", img: "/image/LUCA_ROSETTO.jpg", imgHover: "/image/LUCA_ROSETTO.jpg" },
   { name: "DR. CHRISTOPH BALZAREK", title: "EVP Corporate Development,\nSustainability & Innovation\nOXEA", img: "/image/DR_CHRISTOPH_BALZAREK.jpg", imgHover: "/image/DR_CHRISTOPH_BALZAREK.jpg" },
-  { name: "HARALD GRUBER", title: "", img: "/image/HARALD_GRUBER.jpg", imgHover: "/image/HARALD_GRUBER.jpg" }
+  { name: "HARALD GRUBER", title: "Senior Director Strategic Projects / Board Member\nLenzing AG", img: "/image/HARALD_GRUBER.jpg", imgHover: "/image/HARALD_GRUBER.jpg" }
 ];
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[100vh] pt-24 pb-10 overflow-hidden flex items-center justify-center">
+    <section className="relative min-h-[100vh] pt-24 pb-20 overflow-hidden flex items-center justify-center">
 
       {/* Main Container - Restricting max width to keep elements closer together like the original 970px layout */}
       <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-0">
@@ -38,15 +38,16 @@ const HeroSection = () => {
               FROM PRESSURE<br />
               <span className="flex items-center gap-5 mt-1">
                 <span>TO <span className="text-[#ef7918]">PROFIT</span></span>
-                <button className="bg-[#ef7918] text-white font-bold py-2 px-6 rounded-md uppercase text-lg lg:text-[22px] tracking-wider shadow-[0_0_15px_rgba(239,121,24,0.4)] hover:bg-orange-600 hover:-translate-y-1 transition-all">
-                  Book a Call
+                <button className="bg-[#ef7918] text-white font-bold py-1.5 px-4 rounded-md uppercase text-[14px] md:text-[15px] lg:text-[17px] leading-tight tracking-wider shadow-[0_0_15px_rgba(239,121,24,0.4)] hover:bg-orange-600 hover:-translate-y-1 transition-all">
+                  Gespräch<br />vereinbaren
                 </button>
               </span>
             </h1>
             
             <div className="w-full text-white text-[15px] leading-relaxed text-justify mt-2 opacity-90 font-light pr-4">
               <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel.
+                Die chemische Industrie befindet sich an einem strategischen Wendepunkt: Globale Wettbewerbsdynamiken, strukturelle Kostenunterschiede und tiefgreifende Marktveränderungen erfordern neue Wege und wirksame Maßnahmen. Unter dem Leitmotiv <strong>From Pressure to Profit</strong> fokussiert sich EFESO mit seinen Kunden in der Chemieindustrie konsequent auf Wertsteigerung: durch operative Exzellenz, resiliente Wertschöpfungsketten und die gezielte Nutzung von Technologien und Innovationen – eine Ausrichtung, die zugleich eine zentrale industrielle Priorität für Europa darstellt.<br/><br/>
+                Praxisnahe Lösungen für ein nachhaltiges Wachstum und Profitabilität in der Industrie entstehen im EFESO Chemicals Advisory Board EMEA. TOP-Executives aus der Branche zeigen hier entsprechende Lösungswege für die entscheidenden Transformationsfelder und -schritte auf.
               </p>
             </div>
           </div>
@@ -56,7 +57,7 @@ const HeroSection = () => {
              <img 
                src="/image/wuerfel-ef.png" 
                alt="Efeso Ice Cube" 
-               className="w-full max-w-[400px] md:max-w-[480px] h-auto object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] transform hover:-translate-y-2 md:translate-x-8 lg:translate-x-16 transition-transform duration-700"
+               className="w-full max-w-[400px] md:max-w-[480px] h-auto object-contain transform hover:-translate-y-2 md:translate-x-8 lg:translate-x-16 transition-transform duration-700"
              />
           </div>
 
@@ -66,8 +67,7 @@ const HeroSection = () => {
         <div className="flex w-full mb-2 px-2 mt-0">
           <div className="w-full text-left">
             <h2 className="text-xl md:text-[22px] text-white font-medium mb-2 leading-[1.4] tracking-wide">
-              Capitalizing on Growth Opportunities in the Chemical Industry:<br />
-              Recommendations from the <span className="text-[#ef7918] italic font-semibold">EFESO Chemicals Advisory Board EMEA</span>
+              <span className="text-[#ef7918] italic font-semibold">EFESO Chemicals Advisory Board EMEA</span>
             </h2>
           </div>
         </div>
@@ -85,7 +85,7 @@ const HeroSection = () => {
                    <img 
                       src={expert.img || "/image/wuerfel_ohne_frontal.png"} 
                       alt={expert.name} 
-                      className="w-full h-full object-contain object-bottom drop-shadow-[0_10px_20px_rgba(0,0,0,0.3)] absolute inset-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0" 
+                      className="w-full h-full object-contain object-bottom absolute inset-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0" 
                       onError={(e) => { (e.target as HTMLImageElement).src = "/image/wuerfel_ohne_frontal.png"; }}
                    />
 
@@ -93,7 +93,7 @@ const HeroSection = () => {
                    <img 
                       src={expert.imgHover || "/image/wuerfel_ohne_isometric.png"} 
                       alt={expert.name + " hover"} 
-                      className="w-full h-full object-contain object-bottom drop-shadow-[0_15px_30px_rgba(0,0,0,0.4)] absolute inset-0 transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100" 
+                      className="w-full h-full object-contain object-bottom absolute inset-0 transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100" 
                       onError={(e) => { (e.target as HTMLImageElement).src = "/image/wuerfel_ohne_isometric.png"; }}
                    />
                    

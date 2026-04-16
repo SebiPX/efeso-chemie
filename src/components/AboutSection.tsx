@@ -17,27 +17,26 @@ const AboutSection = () => {
               
               <div className="w-full space-y-4 text-white/90 text-[13px] md:text-[14px] leading-relaxed text-left mb-12">
                 <p className="font-bold text-[#ef7918] text-[15px]">
-                  EFESO Management Consultants<br/>
-                  The leading global pure play operations consultancy
+                  Real Results, Together
                 </p>
                 <p>
-                  EFESO Management Consultants is the leading global pure player in <span className="text-[#ef7918]">operations</span> strategy and performance improvement. We are committed to delivering real results, together with our clients across industries. We create outcomes that make a tangible difference—changes you can see, feel, and measure.
+                  EFESO Management Consultants ist mit rund 1.000 Mitarbeitenden an 35 Standorten weltweit die führende internationale <a href="https://www.roi-international.com/glossary/operations" target="_blank" rel="noreferrer" className="text-[#b04b00] font-bold hover:underline transition-all">Operations-Beratung</a> und Transformationspartner für die produzierende Industrie. Gemeinsam mit unseren Kunden setzen wir Standards für Performance, <a href="https://www.roi-international.com/glossary/resilience" target="_blank" rel="noreferrer" className="text-[#b04b00] font-bold hover:underline transition-all">Resilienz</a> und Produktivität und ermöglichen eine signifikante Wertsteigerung in der gesamten Wertschöpfungskette.
                 </p>
                 <p>
-                  For us, real means results that are concrete and impactful, directly addressing the unique needs of each client. Together reflects our commitment to partnership, working closely with your teams to solve today’s challenges and build <span className="text-[#ef7918]">resilience</span> for the future. We provide end-to-end operation services, integrating processes, human dynamics, digital technology, and sustainability.
+                  Um diese Ziele zu erreichen, denken wir Produkte E-2-E von der Idee bis zur Industrialisierung, erstellen und realisieren ganzheitliche Smart Factory Konzepte, adaptive <a href="https://www.roi-international.com/glossary/supply-chain" target="_blank" rel="noreferrer" className="text-[#b04b00] font-bold hover:underline transition-all">Supply Chains</a> sowie neue Betriebs- und Organisationsmodelle. Bei der Gestaltung und Etablierung <a href="https://www.roi-international.com/glossary/operational-excellence" target="_blank" rel="noreferrer" className="text-[#b04b00] font-bold hover:underline transition-all">operativer Prozesse</a> stehen für uns <a href="https://www.roi-international.com/glossary/efficiency" target="_blank" rel="noreferrer" className="text-[#b04b00] font-bold hover:underline transition-all">Effizienz</a>, Kostenoptimierung und Kundenorientierung im Vordergrund. In all diesen Bereichen erschließen wir die Potenziale der industriellen Digitalisierung.
                 </p>
                 <p>
-                  Our expertise spans production and <span className="text-[#ef7918]">operational excellence</span>, <span className="text-[#ef7918]">supply chain</span> optimization, and idea-to-value solutions. Working in tandem with business leaders from global brands, mid-sized companies, and private equity, we drive transformation through 1,500+ projects annually in over 75 countries. This is powered by deep industry expertise and a commitment to lasting impact.
+                  Die Nachhaltigkeit dieser Veränderungen sichern wir durch Qualifizierungsprogramme und Führungskräfteentwicklung ab. Darüber hinaus unterhalten wir zahlreiche strategische Partnerschaften zu taktgebenden Technologieunternehmen und hochspezialisierten Experten, um für unsere Kunden den Zugang zu Top-Knowhow in relevanten Bereichen zu ermöglichen.
                 </p>
                 <p>
-                  EFESO's work is regularly recognized for the high quality of its results and <span className="text-[#ef7918]">efficiency</span>, as well the ability to deliver <span className="text-[#ef7918]">innovation</span>, consistently reflected in high major industry rankings. Since 2013, EFESO has been awarding the best practical solutions in industrial digitalization with the <span className="text-[#ef7918]">INDUSTRIE 4.0 AWARD</span>, which is one of the most prestigious international industry awards.
+                  Die Arbeit von EFESO wird regelmäßig für ihre Ergebnisqualität, Effizienz und den <a href="https://www.roi-international.com/glossary/innovation" target="_blank" rel="noreferrer" className="text-[#b04b00] font-bold hover:underline transition-all">Innovationsgrad</a> ausgezeichnet und erreicht Spitzenplatzierungen in bedeutenden Branchen-Rankings. Seit 2013 prämiert EFESO die besten Praxislösungen der industriellen Digitalisierung mit dem <a href="https://www.industrie40award.com/" target="_blank" rel="noreferrer" className="text-[#b04b00] font-bold hover:underline transition-all">INDUSTRIE 4.0 AWARD</a>, der zu den renommiertesten internationalen Industriepreisen zählt.
                 </p>
               </div>
 
                <div id="contact" className="scroll-mt-24">
                  <h4 className="text-sm md:text-base font-bold text-[#ef7918] mb-5 uppercase tracking-wider">Your Contact</h4>
                  <div className="flex items-start gap-6 bg-[#3c3d43]/30 p-6 rounded-[4px] border border-white/5 w-full md:w-max hover:bg-[#3c3d43]/50 transition-colors">
-                    <div className="w-24 h-24 rounded-full overflow-hidden shadow-lg border-2 border-[#ef7918]/50 flex-shrink-0 mt-1">
+                    <div className="w-24 h-24 rounded-md overflow-hidden border-2 border-[#ef7918]/50 flex-shrink-0 mt-1">
                       <img src="/image/wuerfel_ohne_frontal.png" alt="Fernando Cruzado Placeholder" className="w-full h-full object-cover" />
                     </div>
                     <div className="text-[13px] text-white/80 leading-snug font-medium flex flex-col justify-center gap-1.5">
@@ -73,7 +72,7 @@ const AboutSection = () => {
               <img 
                 src="/image/wuerfel_efeso.png" 
                 alt="EFESO Stacked Cubes" 
-                className="w-full md:w-[115%] max-w-none h-auto object-contain drop-shadow-[0_15px_35px_rgba(0,0,0,0.35)] md:translate-x-12 lg:translate-x-20 hover:scale-[1.03] transition-transform duration-500 z-10"
+                className="w-full md:w-[115%] max-w-none h-auto object-contain md:translate-x-12 lg:translate-x-20 hover:scale-[1.03] transition-transform duration-500 z-10"
               />
             </div>
 
