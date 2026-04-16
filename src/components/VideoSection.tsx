@@ -44,7 +44,7 @@ const VideoSection = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="videos" className="relative w-full py-12 bg-transparent overflow-hidden">
+    <section id="videos" className="relative w-full pt-4 pb-12 bg-transparent overflow-hidden">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* -- SUSTAINABILITY INTRO -- */}
         <FadeIn direction="up">

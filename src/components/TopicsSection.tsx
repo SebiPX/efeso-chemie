@@ -12,7 +12,7 @@ const TopicsSection = () => {
   ];
 
   return (
-    <section id="topics" className="relative w-full pt-6 pb-12 overflow-hidden">
+    <section id="topics" className="relative w-full pt-6 pb-0 overflow-hidden">
       
       {/* Banner removed based on feedback */}
 
@@ -31,14 +31,14 @@ const TopicsSection = () => {
         </div>
 
         {/* Title & Button Row */}
-        <div className="flex flex-col md:flex-row items-center mb-12 px-4">
+        <div className="flex flex-col md:flex-row items-center mb-6 px-4">
           <h2 className="text-5xl md:text-[65px] font-bold text-white uppercase leading-none drop-shadow-sm text-left w-full">
             {t('topics.headline')}
           </h2>
         </div>
 
         {/* 4 Pillars Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 px-4 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 px-4 mb-0">
             {topics.map((topic, idx) => (
               <FadeIn key={idx} delay={idx * 0.15}>
                 <a href={topic.link} className="flex flex-col relative w-full pt-10 pb-40 px-6 bg-gradient-to-b from-[#eb7614] via-[#e8812c]/90 to-transparent hover:-translate-y-2 transition-transform duration-500 rounded-[2px] h-full block">
