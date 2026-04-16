@@ -72,7 +72,7 @@ const AboutSection = () => {
               <img 
                 src="/image/Würfel_EFESO2-alpha.png" 
                 alt="EFESO Stacked Cubes" 
-                className="w-full md:w-[115%] max-w-none h-auto object-contain md:translate-x-12 lg:translate-x-20 hover:scale-[1.03] transition-transform duration-500 z-10"
+                className="w-full md:w-[115%] max-w-none h-auto object-contain md:translate-x-12 lg:translate-x-20 md:-translate-y-20 lg:-translate-y-32 hover:scale-[1.03] transition-transform duration-500 z-10"
               />
             </div>
 
