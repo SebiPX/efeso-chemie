@@ -152,7 +152,7 @@ const VideoSection = () => {
             videoUrl="https://youtu.be/crR9sV7VvUU"
           />
           <VideoCard 
-            imageSrc="/image/Bildschirmfoto_2026-04-09_um_09.49.10.png" 
+            imageSrc="/image/ZO-Luca-TN.png" 
             name="Luca Rosetto"
             role={"Former Executive VP Operations\nRoyal DSM N.V."}
             fallbackSeed="lrx2"
