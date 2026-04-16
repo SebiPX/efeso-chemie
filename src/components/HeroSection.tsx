@@ -9,17 +9,16 @@ type HeroExpert = {
 };
 
 const heroExperts: HeroExpert[] = [
-  // Top row (Externals)
   { name: "DR. CHRISTOPH BALZAREK", title: "EVP Corporate Development, Sustainability & Innovation\nOXEA", img: "/image/Balzarek.png", imgHover: "/image/iso_balzarek.png" },
   { name: "PIETER BOON", title: "Member of The Supervisory Board\nAnQore", img: "/image/Boon.png", imgHover: "/image/iso_boon.png" },
   { name: "LUCA ROSETTO", title: "Former Executive VP Operations\nRoyal DSM N.V.", img: "/image/Rosetto.png", imgHover: "/image/iso_rosetto.png" },
   { name: "HATEM SOLIMAN", title: "Former President Middle East, Asia Pacific and Latin America Regions\nSchlumberger", img: "/image/Soliman.png", imgHover: "/image/iso_soliman.png" },
-  // Bottom row (EFESO)
   { name: "FERNANDO CRUZADO", title: "VP/Partner & Head of Chemical Industry EMEA\nEFESO Management Consultants", img: "/image/Cruzado.png", imgHover: "/image/iso_cruzado.png" },
-  { name: "JOACHIM KROHN", title: "Expert Director\nEFESO Management Consultants", img: "/image/kron.png", imgHover: "/image/iso_krohn.png" },
-  { name: "DAVID SEDGE", title: "Partner & Head of Chemical Industry Americas\nEFESO Management Consultants", img: "/image/Sedge.png", imgHover: "/image/iso_sedge.png" },
+  { name: "DIDIER BRACKENIER", title: "Senior Partner & Executive Vice President Benelux\nEFESO Management Consultants", img: "/image/Didier_Brackenier.png", imgHover: "/image/iso_brackenier.png" },
+  { name: "JEROEN VAN DER MEER", title: "Senior Partner\nEFESO Management Consultants", img: "/image/VanDerMeer.png", imgHover: "/image/iso_vandermeer.png" },
+  { name: "RALPH LODDER", title: "VP/Partner\nEFESO Management Consultants", img: "/image/RalphLodder.png", imgHover: "/image/iso_lodder.png" },
   { name: "MICHIEL VAN DEN BOOMEN", title: "VP/Partner\nEFESO Management Consultants", img: "/image/VanDenBoomen.png", imgHover: "/image/iso_vandenboomen.png" },
-  { name: "JEROEN VAN DER MEER", title: "Senior Partner\nEFESO Management Consultants", img: "/image/VanDerMeer.png", imgHover: "/image/iso_vandermeer.png" }
+  { name: "JOACHIM KROHN", title: "Expert Director\nEFESO Management Consultants", img: "/image/kron.png", imgHover: "/image/iso_krohn.png" }
 ];
 
 const HeroSection = () => {
