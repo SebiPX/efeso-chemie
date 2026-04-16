@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
+import { useLanguage } from '../context/LanguageContext';
 
 const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const { lang, setLanguage, t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,15 +38,33 @@ const NavBar = () => {
           </div>
 
           <div className="hidden md:flex space-x-8 items-center">
-            {['Advisory Board', 'Topics', 'About', 'FAQ', 'Contact'].map((item) => (
+            {['Advisory Board', 'Topics', 'About', 'FAQ', 'Contact'].map((item) => {
+              const dictKey = item === 'Advisory Board' ? 'advisoryBoard' : item.toLowerCase();
+              return (
               <a
                 key={item}
                 href={`#${item.toLowerCase().replace(' ', '-')}`}
                 className={`${scrolled ? 'text-[#3c3d43]' : 'text-white'} hover:text-[#ef7918] transition-colors font-semibold text-sm uppercase tracking-wider relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-[#ef7918] after:transition-all hover:after:w-full`}
               >
-                {item}
+                {t(`nav.${dictKey}`)}
               </a>
-            ))}
+            )})}
+            
+            <div className="flex items-center space-x-2 pl-4 border-l border-white/20">
+              <button 
+                onClick={() => setLanguage('de')} 
+                className={`text-xs font-bold transition-colors ${lang === 'de' ? 'text-[#ef7918]' : (scrolled ? 'text-[#3c3d43] hover:text-[#ef7918]' : 'text-white hover:text-[#ef7918]')}`}
+              >
+                DE
+              </button>
+              <span className={scrolled ? 'text-[#3c3d43]/30' : 'text-white/30'}>|</span>
+              <button 
+                onClick={() => setLanguage('en')} 
+                className={`text-xs font-bold transition-colors ${lang === 'en' ? 'text-[#ef7918]' : (scrolled ? 'text-[#3c3d43] hover:text-[#ef7918]' : 'text-white hover:text-[#ef7918]')}`}
+              >
+                EN
+              </button>
+            </div>
           </div>
         </div>
       </div>

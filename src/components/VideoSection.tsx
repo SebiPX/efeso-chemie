@@ -1,4 +1,5 @@
 import { FadeIn } from './FadeIn';
+import { useLanguage } from '../context/LanguageContext';
 
 // Reusable VideoCard Component to ensure perfectly uniform styling
 const VideoCard = ({ imageSrc, name, role, fallbackSeed, videoUrl }: { imageSrc: string, name: string, role: string, fallbackSeed: string, videoUrl?: string }) => {
@@ -40,24 +41,26 @@ const VideoCard = ({ imageSrc, name, role, fallbackSeed, videoUrl }: { imageSrc:
 };
 
 const VideoSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="videos" className="relative w-full py-12 bg-transparent overflow-hidden">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* -- SUSTAINABILITY INTRO -- */}
         <FadeIn direction="up">
         <div id="sustainability" className="w-full mb-12 flex flex-col items-start text-left scroll-mt-32">
-          <h3 className="text-6xl md:text-[85px] font-bold text-[#ef7918] mb-2 tracking-tight drop-shadow-sm uppercase leading-none">
-            NACHHALTIGKEIT
+          <h3 className="text-6xl md:text-[85px] font-bold text-[#ef7918] mb-2 tracking-tight drop-shadow-sm uppercase leading-none whitespace-pre-line">
+            {t('videos.sustainability.title')}
           </h3>
-          <p className="text-white text-[20px] md:text-[24px] font-bold mb-4 drop-shadow-sm">
-            Nachhaltigkeit in einen Wettbewerbsvorteil verwandeln
+          <p className="text-white text-[20px] md:text-[24px] font-bold mb-4 drop-shadow-sm whitespace-pre-line">
+            {t('videos.sustainability.sub')}
           </p>
           <div className="w-full md:w-[60%] space-y-5 text-white/90 text-[13px] md:text-[14px] leading-relaxed text-left">
             <p>
-              Chemieunternehmen treiben Nachhaltigkeit in zwei Rollen voran: als Lösungsanbieter für Recycling, erneuerbare Energien und Versorgungssicherheit sowie als Gestalter der eigenen Produktion. Dafür optimieren sie Prozesse, ihren Energieeinsatz sowie ihre Feedstocks und investieren in klimafreundliche Next‑Generation‑Anlagen. 
+              {t('videos.sustainability.text1')}
             </p>
             <p>
-              „Game Changer“ für die Wertschöpfung und weitere Aspekte erläutern die Advisory Board-Mitglieder in diesen Video-Interviews.
+              {t('videos.sustainability.text2')}
             </p>
           </div>
         </div>
@@ -84,18 +87,18 @@ const VideoSection = () => {
         {/* -- DECARBONIZATION INTRO -- */}
         <FadeIn direction="up">
         <div id="decarbonization" className="w-full mt-20 mb-12 flex flex-col items-end text-right scroll-mt-32">
-          <h3 className="text-5xl md:text-[65px] font-bold text-[#ef7918] mb-4 tracking-tight drop-shadow-sm uppercase">
-            DEKARBONISIERUNG &<br /> CLEAN ENERGY
+          <h3 className="text-5xl md:text-[65px] font-bold text-[#ef7918] mb-4 tracking-tight drop-shadow-sm uppercase whitespace-pre-line">
+            {t('videos.decarbonization.title')}
           </h3>
-          <p className="text-white text-[20px] md:text-[24px] font-bold mb-4">
-            Hindernisse bei der Umsetzung von Dekarbonisierungszielen überwinden
+          <p className="text-white text-[20px] md:text-[24px] font-bold mb-4 whitespace-pre-line">
+            {t('videos.decarbonization.sub')}
           </p>
           <div className="w-full md:w-[60%] space-y-5 text-white/95 text-[13px] md:text-[14px] leading-relaxed text-right">
             <p>
-              Der Druck zur Reduzierung der Scope-1- und Scope-2-Emissionen nimmt zu – vonseiten der Regulierungsbehörden, der Kunden sowie aus wirtschaftlicher Sicht. Im Chemiesektor erfordert das u.a. einen verstärkten Einsatz alternativer Energieträger und elektrifizierter Produktionsprozesse. 
+              {t('videos.decarbonization.text1')}
             </p>
             <p>
-              In den Video-Interviews schildern die Themenexperten, warum das Thema erfolgskritisch für eine zukunftsfähige Chemieindustrie ist und wo Potenziale vorhanden sind.
+              {t('videos.decarbonization.text2')}
             </p>
           </div>
         </div>
@@ -123,18 +126,18 @@ const VideoSection = () => {
 
         {/* -- INFRASTRUCTURE INTRO -- */}
         <div id="infrastructure" className="w-full mt-20 mb-12 flex flex-col items-start text-left scroll-mt-32">
-          <h3 className="text-5xl md:text-[65px] font-bold text-[#ef7918] mb-4 tracking-tight drop-shadow-sm uppercase">
-            ZUKUNFTSSICHERE ORGANISATION
+          <h3 className="text-5xl md:text-[65px] font-bold text-[#ef7918] mb-4 tracking-tight drop-shadow-sm uppercase whitespace-pre-line">
+            {t('videos.infrastructure.title')}
           </h3>
-          <p className="text-white text-[20px] md:text-[24px] font-bold mb-4">
-            Zukunftsfähigkeit als TOP-Priorität
+          <p className="text-white text-[20px] md:text-[24px] font-bold mb-4 whitespace-pre-line">
+            {t('videos.infrastructure.sub')}
           </p>
           <div className="w-full md:w-[60%] space-y-5 text-white/95 text-[13px] md:text-[14px] leading-relaxed text-left">
             <p>
-              Markwirtschaftliche Rahmenbedingungen zwingen die Chemieindustrie zu einer Optimierung von Prozessen und Abläufen. Gleichzeitig muss getreu dem Motto „form follows function“ die Frage gestellt werden, ob existierende organisatorische Strukturen diese neuen Anforderungen und Arbeitsweisen bestmöglich unterstützen.
+              {t('videos.infrastructure.text1')}
             </p>
             <p>
-              Erfahren Sie von Mitgliedern des EFESO Chemicals Advisory Board EMEA, wie sich Unternehmensorganisationen auf die Zukunft ausrichten und für effektive Prozesse sorgen. 
+              {t('videos.infrastructure.text2')}
             </p>
           </div>
         </div>
@@ -166,18 +169,18 @@ const VideoSection = () => {
 
         {/* -- OPERATIONAL EXCELLENCE INTRO -- */}
         <div id="operational-excellence" className="w-full mt-20 mb-12 flex flex-col items-end text-right scroll-mt-32">
-          <h3 className="text-5xl md:text-[65px] font-bold text-[#ef7918] mb-4 tracking-tight drop-shadow-sm uppercase leading-none">
-            OPERATIONAL EXCELLENCE (OPEX)
+          <h3 className="text-5xl md:text-[65px] font-bold text-[#ef7918] mb-4 tracking-tight drop-shadow-sm uppercase leading-none whitespace-pre-line">
+            {t('videos.opex.title')}
           </h3>
-          <p className="text-white text-[20px] md:text-[24px] font-bold mb-4 mt-4">
-            Vom reaktiven in den proaktiven Modus wechseln 
+          <p className="text-white text-[20px] md:text-[24px] font-bold mb-4 mt-4 whitespace-pre-line">
+            {t('videos.opex.sub')}
           </p>
           <div className="w-full md:w-[60%] space-y-5 text-white/95 text-[13px] md:text-[14px] leading-relaxed text-right">
             <p>
-              OPEX-Projekte in der Chemieindustrie sind auf eine umfassende Verbesserung der Wertschöpfungsprozesse des jeweiligen Unternehmens ausgerichtet. Im europäischen Umfeld sorgen Energiepreise, der Feedstock und regulatorische Rahmenbedingen für eine Benachteiligung im globalen Wettbewerb, insbesondere gegenüber den USA und Asien. 
+              {t('videos.opex.text1')}
             </p>
             <p>
-              Erfahren Sie in den Videobeiträgen, wie Unternehmen diese Herausforderung meistern und ihre Ressourcen etwa im Kontext von „Maintenance Excellence“ bestmöglich nutzen.
+              {t('videos.opex.text2')}
             </p>
           </div>
         </div>

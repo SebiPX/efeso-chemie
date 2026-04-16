@@ -1,13 +1,16 @@
 import { FadeIn } from './FadeIn';
-
-const topics = [
-  { title: "NACHHALTIGKEIT", text: "Als Lösungsanbieter neue Märkte erschließen und die eigene Produktion kontinuierlich optimieren.", link: "#sustainability" },
-  { title: "DEKARBONISIERUNG\n& CLEAN ENERGY", text: "Transformationserfolge erzielen und über Organisationseinheiten und Werke skalieren.", link: "#decarbonization" },
-  { title: "ZUKUNFTSSICHERE\nORGANISATION", text: "Unternehmen auf die Zukunft ausrichten und von effektiven Prozessen profitieren.", link: "#infrastructure" },
-  { title: "OPERATIONAL\nEXCELLENCE", text: "Veränderungen vorantreiben und kontinuierliche Verbesserung etablieren.", link: "#operational-excellence" }
-];
+import { useLanguage } from '../context/LanguageContext';
 
 const TopicsSection = () => {
+  const { t } = useLanguage();
+
+  const topics = [
+    { title: t('topics.pillar1.title'), text: t('topics.pillar1.text'), link: "#sustainability" },
+    { title: t('topics.pillar2.title'), text: t('topics.pillar2.text'), link: "#decarbonization" },
+    { title: t('topics.pillar3.title'), text: t('topics.pillar3.text'), link: "#infrastructure" },
+    { title: t('topics.pillar4.title'), text: t('topics.pillar4.text'), link: "#operational-excellence" }
+  ];
+
   return (
     <section id="topics" className="relative w-full pt-6 pb-12 overflow-hidden">
       
@@ -19,10 +22,10 @@ const TopicsSection = () => {
         <div className="flex flex-col mb-12 px-4">
           <div className="w-full text-white/90 text-[14px] md:text-[15px] leading-relaxed text-left font-light space-y-4">
             <p>
-              Das EFESO Chemicals Advisory Board EMEA unterstützt EFESO bei der Weiterentwicklung relevanter Beratungsansätze und der erfolgreichen Positionierung im Markt. Es stellt sicher, dass zentrale Fragestellungen und strukturelle Herausforderungen der Industrie frühzeitig identifiziert und in relevante, wirksame Lösungen übersetzt werden.
+              {t('topics.intro1')}
             </p>
             <p>
-              Darüber hinaus bringt das Advisory Board bedarfsgerecht Knowhow in ausgewählte Consulting-Projekte ein. EFESO‑Kunden profitieren in mehrfacher Hinsicht: von fundierter, praxiserprobter Expertise, der Relevanz der angebotenen Lösungen auf Top‑Management‑Ebene – und von Antworten auf die entscheidenden strategischen und operativen Fragen. Beispielhafte Themenschwerpunkte und Maßnahmen erläutern Mitglieder des Advisory Board in den hier gezeigten Video-Interviews.
+              {t('topics.intro2')}
             </p>
           </div>
         </div>
@@ -30,7 +33,7 @@ const TopicsSection = () => {
         {/* Title & Button Row */}
         <div className="flex flex-col md:flex-row items-center mb-12 px-4">
           <h2 className="text-5xl md:text-[65px] font-bold text-white uppercase leading-none drop-shadow-sm text-left w-full">
-            WACHSTUMSCHANCEN NUTZEN
+            {t('topics.headline')}
           </h2>
         </div>
 

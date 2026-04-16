@@ -1,4 +1,5 @@
 import { FadeIn } from './FadeIn';
+import { useLanguage } from '../context/LanguageContext';
 
 type HeroExpert = {
   name: string;
@@ -23,6 +24,8 @@ const heroExperts: HeroExpert[] = [
 ];
 
 const HeroSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="relative min-h-[100vh] pt-24 pb-6 overflow-hidden flex items-center justify-center">
 
@@ -38,18 +41,16 @@ const HeroSection = () => {
               FROM PRESSURE<br />
               <span className="flex items-center gap-5 mt-1">
                 <span>TO <span className="text-[#ef7918]">PROFIT</span></span>
-                <button className="bg-[#ef7918] text-white font-bold py-1.5 px-4 rounded-md uppercase text-[14px] md:text-[15px] lg:text-[17px] leading-tight tracking-wider shadow-[0_0_15px_rgba(239,121,24,0.4)] hover:bg-orange-600 hover:-translate-y-1 transition-all">
-                  Gespräch<br />vereinbaren
+                <button className="bg-[#ef7918] text-white font-bold py-1.5 px-4 rounded-md uppercase text-[14px] md:text-[15px] lg:text-[17px] leading-tight tracking-wider shadow-[0_0_15px_rgba(239,121,24,0.4)] hover:bg-orange-600 hover:-translate-y-1 transition-all whitespace-pre-line text-left">
+                  {t('hero.cta')}
                 </button>
               </span>
             </h1>
             
-            <div className="w-full text-white text-[15px] leading-relaxed text-justify mt-2 opacity-90 font-light pr-4">
-              <p>
-                Die chemische Industrie befindet sich an einem strategischen Wendepunkt: Globale Wettbewerbsdynamiken, strukturelle Kostenunterschiede und tiefgreifende Marktveränderungen erfordern neue Wege und wirksame Maßnahmen. Unter dem Leitmotiv <strong>From Pressure to Profit</strong> fokussiert sich EFESO mit seinen Kunden in der Chemieindustrie konsequent auf Wertsteigerung: durch operative Exzellenz, resiliente Wertschöpfungsketten und die gezielte Nutzung von Technologien und Innovationen – eine Ausrichtung, die zugleich eine zentrale industrielle Priorität für Europa darstellt.<br/><br/>
-                Praxisnahe Lösungen für ein nachhaltiges Wachstum und Profitabilität in der Industrie entstehen im EFESO Chemicals Advisory Board EMEA. TOP-Executives aus der Branche zeigen hier entsprechende Lösungswege für die entscheidenden Transformationsfelder und -schritte auf.
-              </p>
-            </div>
+            <div 
+              className="w-full text-white text-[15px] leading-relaxed text-justify mt-2 opacity-90 font-light pr-4"
+              dangerouslySetInnerHTML={{ __html: `${t('hero.copy1')}<br/><br/>${t('hero.copy2')}` }}
+            />
           </div>
 
           {/* Right Side: Ice Cube */}
@@ -67,7 +68,7 @@ const HeroSection = () => {
         <div className="flex w-full mb-2 px-2 mt-0">
           <div className="w-full text-left">
             <h2 className="text-xl md:text-[22px] text-white font-medium mb-2 leading-[1.4] tracking-wide">
-              <span className="bg-[#ef7918] text-white px-4 py-1.5 rounded-sm font-semibold shadow-sm inline-block tracking-wide">EFESO Chemicals Advisory Board EMEA</span>
+              <span className="bg-[#ef7918] text-white px-4 py-1.5 rounded-sm font-semibold shadow-sm inline-block tracking-wide">{t('hero.subheadline')}</span>
             </h2>
           </div>
         </div>

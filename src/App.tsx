@@ -1,5 +1,6 @@
 import NavBar from './components/NavBar';
 import HeroSection from './components/HeroSection';
+import { LanguageProvider } from './context/LanguageContext';
 
 import TopicsSection from './components/TopicsSection';
 import VideoSection from './components/VideoSection';
@@ -9,6 +10,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
+    <LanguageProvider>
     <div className="relative min-h-screen font-sans antialiased selection:bg-[#ef7918] selection:text-black text-gray-200">
       
       {/* Global Background Gradient & Texture */}
@@ -38,6 +40,7 @@ function App() {
       
       </div>
     </div>
+    </LanguageProvider>
   );
 }
 
