@@ -20,8 +20,8 @@ const VideoCard = ({ imageSrc, name, role, fallbackSeed, videoUrl }: { imageSrc:
         />
         {isVideo && (
           <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-500 flex items-center justify-center">
-            <div className="w-14 h-14 md:w-16 md:h-16 bg-[#ef7918]/90 rounded-full flex items-center justify-center transform group-hover:scale-110 group-hover:bg-[#ef7918] transition-all duration-500 shadow-lg">
-              <svg className="w-7 h-7 md:w-8 md:h-8 text-white ml-2" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            <div className="w-14 h-14 md:w-16 md:h-16 bg-[#ef7918]/90 rounded-full flex items-center justify-center transform group-hover:scale-110 group-hover:bg-[#ef7918] transition-all duration-500 shadow-lg pl-1">
+              <svg className="w-7 h-7 md:w-8 md:h-8 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
             </div>
           </div>
         )}
@@ -45,7 +45,7 @@ const VideoSection = () => {
 
   return (
     <section id="videos" className="relative w-full pt-20 pb-12 bg-transparent overflow-hidden">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* -- SUSTAINABILITY INTRO -- */}
         <FadeIn direction="up">
         <div id="sustainability" className="w-full mb-12 flex flex-col items-start text-left scroll-mt-32">
@@ -55,7 +55,7 @@ const VideoSection = () => {
           <p className="text-white text-[20px] md:text-[24px] font-bold mb-4 drop-shadow-sm whitespace-pre-line">
             {t('videos.sustainability.sub')}
           </p>
-          <div className="w-full md:w-[60%] space-y-5 text-white/90 text-[13px] md:text-[14px] leading-relaxed text-left">
+          <div className="w-full md:w-[85%] space-y-5 text-white/90 text-[13px] md:text-[14px] leading-relaxed text-justify">
             <p>
               {t('videos.sustainability.text1')}
             </p>
@@ -93,7 +93,7 @@ const VideoSection = () => {
           <p className="text-white text-[20px] md:text-[24px] font-bold mb-4 whitespace-pre-line">
             {t('videos.decarbonization.sub')}
           </p>
-          <div className="w-full md:w-[60%] space-y-5 text-white/95 text-[13px] md:text-[14px] leading-relaxed text-right">
+          <div className="w-full md:w-[85%] space-y-5 text-white/95 text-[13px] md:text-[14px] leading-relaxed text-justify">
             <p>
               {t('videos.decarbonization.text1')}
             </p>
@@ -132,7 +132,7 @@ const VideoSection = () => {
           <p className="text-white text-[20px] md:text-[24px] font-bold mb-4 whitespace-pre-line">
             {t('videos.infrastructure.sub')}
           </p>
-          <div className="w-full md:w-[60%] space-y-5 text-white/95 text-[13px] md:text-[14px] leading-relaxed text-left">
+          <div className="w-full md:w-[85%] space-y-5 text-white/95 text-[13px] md:text-[14px] leading-relaxed text-justify">
             <p>
               {t('videos.infrastructure.text1')}
             </p>
@@ -175,7 +175,7 @@ const VideoSection = () => {
           <p className="text-white text-[20px] md:text-[24px] font-bold mb-4 mt-4 whitespace-pre-line">
             {t('videos.opex.sub')}
           </p>
-          <div className="w-full md:w-[60%] space-y-5 text-white/95 text-[13px] md:text-[14px] leading-relaxed text-right">
+          <div className="w-full md:w-[85%] space-y-5 text-white/95 text-[13px] md:text-[14px] leading-relaxed text-justify">
             <p>
               {t('videos.opex.text1')}
             </p>

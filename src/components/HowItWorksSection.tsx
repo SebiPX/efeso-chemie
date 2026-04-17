@@ -6,7 +6,7 @@ const HowItWorksSection = () => {
   return (
     <section id="how-it-works" className="relative w-full py-12 bg-transparent overflow-hidden">
       <FadeIn direction="up">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col items-center md:items-start text-center md:text-left">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col items-center md:items-start text-center md:text-left">
           
 
 

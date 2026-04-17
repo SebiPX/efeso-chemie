@@ -139,7 +139,7 @@ const HeroSection = () => {
     <section className="relative min-h-[100vh] pt-16 md:pt-20 lg:pt-24 pb-6 overflow-hidden flex items-center justify-center">
 
       {/* Main Container - Restricting max width to keep elements closer together like the original 970px layout */}
-      <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-0 flex flex-col justify-center">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-0 flex flex-col justify-center">
         
         {/* HERO TOP ROW (Text Left, Cube Right) */}
         <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-6 lg:gap-10 mb-4 md:mb-6 pt-0">
@@ -167,14 +167,14 @@ const HeroSection = () => {
               {/* Row 2: Text breaks out of max-content and spans full 60% column */}
               <div className="col-span-1 md:col-span-2 pt-6 pb-6">
                 <div 
-                  className="w-full text-white text-[13px] xl:text-[15px] leading-relaxed text-left opacity-90 font-light pr-0"
+                  className="w-full text-white text-[13px] xl:text-[15px] leading-relaxed text-justify opacity-90 font-light pr-0"
                   dangerouslySetInnerHTML={{ __html: `${t('hero.copy1')}<br/><br/>${t('hero.copy2')}` }}
                 />
               </div>
 
               {/* Row 3, Col 1: H2 perfectly aligns and stretches to H1 width */}
               <div className="col-start-1 flex items-stretch">
-                <h2 className="w-full text-base sm:text-lg md:text-[22px] text-white font-medium leading-[1.4] tracking-wide">
+                <h2 className="w-full text-lg sm:text-xl md:text-[26px] text-white font-medium leading-[1.4] tracking-wide">
                   <span className="bg-[#ef7918] text-white px-4 py-2 md:py-2 rounded-sm font-semibold shadow-sm block w-full text-left tracking-wide h-full flex flex-col justify-center">
                     {t('hero.subheadline')}
                   </span>

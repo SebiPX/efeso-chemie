@@ -6,7 +6,7 @@ const AboutSection = () => {
 
   return (
     <section id="about" className="relative w-full py-12 bg-transparent overflow-hidden">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* -- ABOUT EFESO -- */}
         <FadeIn direction="up">
@@ -14,12 +14,12 @@ const AboutSection = () => {
             
             {/* Left Column: Text & Persons */}
             <div className="w-full md:w-1/2">
-              <h2 className="text-5xl md:text-[65px] font-bold text-white mb-6 uppercase tracking-tight drop-shadow-sm leading-none">
+              <h2 className="text-5xl md:text-[65px] font-bold text-[#ef7918] mb-6 uppercase tracking-tight drop-shadow-sm leading-none">
                 {t('about.headline')}
               </h2>
               
-              <div className="w-full space-y-4 text-white/90 text-[13px] md:text-[14px] leading-relaxed text-left mb-12">
-                <p className="font-bold text-[#ef7918] text-[15px] whitespace-pre-line">
+              <div className="w-full space-y-4 text-white/90 text-[13px] md:text-[14px] leading-relaxed text-justify mb-12">
+                <p className="font-bold text-white text-[15px] whitespace-pre-line">
                   {t('about.sub')}
                 </p>
                 <p dangerouslySetInnerHTML={{ __html: t('about.p1') }} />

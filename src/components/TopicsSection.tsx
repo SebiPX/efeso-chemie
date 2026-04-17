@@ -16,7 +16,7 @@ const TopicsSection = () => {
       
       {/* Banner removed based on feedback */}
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         
         {/* Intro Text Box */}
         <div className="flex flex-col mb-20 px-4">
