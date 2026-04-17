@@ -144,36 +144,44 @@ const HeroSection = () => {
         {/* HERO TOP ROW (Text Left, Cube Right) */}
         <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-6 lg:gap-10 mb-4 md:mb-6 pt-0">
           
-          {/* Left Side: Slogan & Text */}
+          {/* Left Side: Slogan & Text & Subheadline via Grid to sync widths */}
           <div className="flex flex-col items-start w-full md:w-[60%]">
-            
-            {/* Wrapper to bind Headline and Subheadline widths logically */}
-            <div className="flex flex-col items-stretch w-full md:w-max md:max-w-none">
-              <h1 className="text-4xl sm:text-5xl md:text-[50px] lg:text-[60px] xl:text-[72px] font-bold text-white leading-[1.1] tracking-wide uppercase drop-shadow-md mb-4 md:whitespace-nowrap">
-                FROM PRESSURE<br />
-                <span className="flex flex-wrap md:flex-nowrap items-center gap-3 md:gap-5 mt-1 sm:mt-2">
-                  <span>TO <span className="text-[#ef7918]">PROFIT</span></span>
-                  <button 
-                    onClick={() => setIsModalOpen(true)}
-                    className="bg-[#ef7918] text-white font-bold py-1.5 px-4 rounded-md uppercase text-[13px] md:text-[15px] lg:text-[17px] leading-tight tracking-wider shadow-[0_0_15px_rgba(239,121,24,0.4)] hover:bg-orange-600 hover:-translate-y-1 transition-all whitespace-pre-line text-left mt-2 md:mt-0"
-                  >
-                    {t('hero.cta')}
-                  </button>
-                </span>
-              </h1>
+            <div className="grid grid-cols-1 md:grid-cols-[max-content_1fr] w-full">
+              
+              {/* Row 1, Col 1: H1 sets the max-content width */}
+              <div className="col-start-1">
+                <h1 className="text-4xl sm:text-5xl md:text-[50px] lg:text-[60px] xl:text-[72px] font-bold text-white leading-[1.1] tracking-wide uppercase drop-shadow-md md:whitespace-nowrap">
+                  FROM PRESSURE<br />
+                  <span className="flex flex-wrap md:flex-nowrap items-center gap-3 md:gap-5 mt-1 sm:mt-2">
+                    <span>TO <span className="text-[#ef7918]">PROFIT</span></span>
+                    <button 
+                      onClick={() => setIsModalOpen(true)}
+                      className="bg-[#ef7918] text-white font-bold py-1.5 px-4 rounded-md uppercase text-[13px] md:text-[15px] lg:text-[17px] leading-tight tracking-wider shadow-[0_0_15px_rgba(239,121,24,0.4)] hover:bg-orange-600 hover:-translate-y-1 transition-all whitespace-pre-line text-left mt-2 md:mt-0"
+                    >
+                      {t('hero.cta')}
+                    </button>
+                  </span>
+                </h1>
+              </div>
 
-              {/* Subheadline now matches exactly the width of the H1 above it */}
-              <h2 className="w-full text-base sm:text-lg md:text-[22px] text-white font-medium mb-4 leading-[1.4] tracking-wide">
-                <span className="bg-[#ef7918] text-white px-4 py-2 md:py-2 rounded-sm font-semibold shadow-sm block w-full text-left tracking-wide">
-                  {t('hero.subheadline')}
-                </span>
-              </h2>
+              {/* Row 2: Text breaks out of max-content and spans full 60% column */}
+              <div className="col-span-1 md:col-span-2 pt-6 pb-6">
+                <div 
+                  className="w-full text-white text-[13px] xl:text-[15px] leading-relaxed text-left opacity-90 font-light pr-0"
+                  dangerouslySetInnerHTML={{ __html: `${t('hero.copy1')}<br/><br/>${t('hero.copy2')}` }}
+                />
+              </div>
+
+              {/* Row 3, Col 1: H2 perfectly aligns and stretches to H1 width */}
+              <div className="col-start-1 flex items-stretch">
+                <h2 className="w-full text-base sm:text-lg md:text-[22px] text-white font-medium leading-[1.4] tracking-wide">
+                  <span className="bg-[#ef7918] text-white px-4 py-2 md:py-2 rounded-sm font-semibold shadow-sm block w-full text-left tracking-wide h-full flex flex-col justify-center">
+                    {t('hero.subheadline')}
+                  </span>
+                </h2>
+              </div>
+              
             </div>
-            
-            <div 
-              className="w-full text-white text-[13px] xl:text-[15px] leading-relaxed text-left mt-0 opacity-90 font-light pr-0"
-              dangerouslySetInnerHTML={{ __html: `${t('hero.copy1')}<br/><br/>${t('hero.copy2')}` }}
-            />
           </div>
 
           {/* Right Side: Ice Cube */}
