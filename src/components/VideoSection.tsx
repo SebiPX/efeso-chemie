@@ -78,9 +78,9 @@ const VideoSection = () => {
           <VideoCard 
             imageSrc="/image/NA-Hatem-TN.png"
             name="HATEM SOLIMAN"
-            role={"Former President Middle East,\nAsia Pacific and Latin America\nRegions Schlumberger"}
+            role={"Former President Middle East, Asia Pacific\nand Latin America Regions\nSchlumberger"}
             fallbackSeed="hsx"
-            videoUrl="https://youtu.be/WvGdnosMibI"
+            videoUrl="https://youtu.be/SbuNCT3s0wc"
           />
         </div>
 

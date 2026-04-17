@@ -17,8 +17,8 @@ const Footer = () => {
           <a href="#about" className="hover:text-[#ef7918] transition-colors">{t('footer.about')}</a>
           <a href="#contact" className="hover:text-[#ef7918] transition-colors">{t('footer.contact')}</a>
           <span className="hidden md:inline text-white/20">|</span>
-          <a href="https://www.efeso.com/privacy-policy/" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">{t('footer.privacy')}</a>
-          <a href="https://www.efeso.com/legal-notice/" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">{t('footer.legal')}</a>
+          <a href="https://www.roi.de/datenschutzerklaerung" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">{t('footer.privacy')}</a>
+          <a href="https://www.roi.de/unternehmensberatung/kontakt/impressum" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">{t('footer.legal')}</a>
         </div>
 
         {/* Right: Copyright */}
