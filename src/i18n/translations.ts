@@ -119,7 +119,7 @@ export const translations = {
       }
     },
     decarbonization: {
-       title: { de: 'DEKARBONISIERUNG &\nCLEAN ENERGY', en: 'DECARBONIZATION &\nCLEAN ENERGY' },
+       title: { de: 'DEKARBONISIERUNG\n& CLEAN ENERGY', en: 'DECARBONIZATION\n& CLEAN ENERGY' },
        sub: { de: 'Hindernisse bei der Umsetzung von Dekarbonisierungszielen überwinden', en: 'Overcoming obstacles and achieving decarbonization goals' },
        text1: {
          de: 'Der Druck zur Reduzierung der Scope-1- und Scope-2-Emissionen nimmt zu – vonseiten der Regulierungsbehörden, der Kunden sowie aus wirtschaftlicher Sicht. Im Chemiesektor erfordert das u.a. einen verstärkten Einsatz alternativer Energieträger und elektrifizierter Produktionsprozesse.',
@@ -131,7 +131,7 @@ export const translations = {
        }
     },
     infrastructure: {
-       title: { de: 'ZUKUNFTSSICHERE ORGANISATION', en: 'FUTURE-PROOF ORGANIZATION' },
+       title: { de: 'ZUKUNFTSSICHERE\nORGANISATION', en: 'FUTURE-PROOF\nORGANIZATION' },
        sub: { de: 'Zukunftsfähigkeit als TOP-Priorität', en: 'Future viability as a top priority' },
        text1: {
          de: 'Markwirtschaftliche Rahmenbedingungen zwingen die Chemieindustrie zu einer Optimierung von Prozessen und Abläufen. Gleichzeitig muss getreu dem Motto „form follows function“ die Frage gestellt werden, ob existierende organisatorische Strukturen diese neuen Anforderungen und Arbeitsweisen bestmöglich unterstützen.',
@@ -143,7 +143,7 @@ export const translations = {
        }
     },
     opex: {
-       title: { de: 'OPERATIONAL EXCELLENCE (OPEX)', en: 'OPERATIONAL EXCELLENCE (OPEX)' },
+       title: { de: 'OPERATIONAL\nEXCELLENCE (OPEX)', en: 'OPERATIONAL\nEXCELLENCE (OPEX)' },
        sub: { de: 'Vom reaktiven in den proaktiven Modus wechseln', en: 'Switching from reactive to proactive mode' },
        text1: {
          de: 'OPEX-Projekte in der Chemieindustrie sind auf eine umfassende Verbesserung der Wertschöpfungsprozesse des jeweiligen Unternehmens ausgerichtet. Im europäischen Umfeld sorgen Energiepreise, der Feedstock und regulatorische Rahmenbedingen für eine Benachteiligung im globalen Wettbewerb, insbesondere gegenüber den USA und Asien.',
