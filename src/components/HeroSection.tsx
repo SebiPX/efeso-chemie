@@ -172,6 +172,17 @@ const HeroSection = () => {
                 />
               </div>
 
+              {/* MOBILE ONLY ICE CUBE (Placed between Text and H2) */}
+              <div className="col-span-1 md:hidden flex justify-center mb-8">
+                 <a href="https://www.roi.de/unternehmensberatung/referenzen/beratung-chemie" target="_blank" rel="noreferrer" className="block max-w-[260px] sm:max-w-[300px]">
+                   <img 
+                     src="/image/wuerfel-efeso-new.png" 
+                     alt="Efeso Ice Cube" 
+                     className="w-full h-auto object-contain transform hover:-translate-y-2 transition-transform duration-700"
+                   />
+                 </a>
+              </div>
+
               {/* Row 3, Col 1: H2 perfectly aligns and stretches to H1 width */}
               <div className="col-start-1 flex items-stretch">
                 <h2 className="w-full text-lg sm:text-xl md:text-[26px] text-white font-medium leading-[1.4] tracking-wide">
@@ -184,9 +195,9 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right Side: Ice Cube */}
-          <div className="w-full md:w-[45%] flex justify-center md:justify-end shrink-0 mt-6 md:mt-0">
-             <a href="https://www.roi.de/unternehmensberatung/referenzen/beratung-chemie" target="_blank" rel="noreferrer" className="block max-w-[280px] sm:max-w-[320px] md:max-w-[380px] lg:max-w-[480px]">
+          {/* Right Side: Ice Cube (Desktop Only) */}
+          <div className="hidden md:flex w-full md:w-[45%] justify-end shrink-0">
+             <a href="https://www.roi.de/unternehmensberatung/referenzen/beratung-chemie" target="_blank" rel="noreferrer" className="block md:max-w-[380px] lg:max-w-[480px]">
                <img 
                  src="/image/wuerfel-efeso-new.png" 
                  alt="Efeso Ice Cube" 
