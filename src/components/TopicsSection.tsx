@@ -32,9 +32,10 @@ const TopicsSection = () => {
 
         {/* Title & Button Row */}
         <div className="flex flex-col md:flex-row items-center mb-6 px-4">
-          <h2 className="text-[9vw] sm:text-5xl md:text-[65px] font-bold text-white uppercase leading-tight drop-shadow-sm text-left w-full whitespace-pre-line">
-            {t('topics.headline')}
-          </h2>
+          <h2 
+            className="text-[9vw] sm:text-5xl md:text-[65px] font-bold text-white uppercase leading-tight drop-shadow-sm text-left w-full"
+            dangerouslySetInnerHTML={{ __html: t('topics.headline') }}
+          />
         </div>
 
         {/* 4 Pillars Grid */}

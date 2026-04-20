@@ -85,8 +85,8 @@ export const translations = {
       en: 'In addition, the Advisory Board contributes its expertise to selected consulting projects as needed. EFESO clients benefit in several ways: from in-depth, proven expertise; from solutions tailored to top-management needs; and from answers to critical strategic and operational questions. Members of the Advisory Board discuss key topics and initiatives in the video interviews shown here.'
     },
     headline: {
-      de: 'WACHSTUMSCHANCEN\nNUTZEN',
-      en: 'Accelerating\ngrowth'
+      de: '<span class="md:hidden">WACHSTUMS-<br/>CHANCEN<br/>NUTZEN</span><span class="hidden md:inline">WACHSTUMSCHANCEN<br/>NUTZEN</span>',
+      en: 'Accelerating<br/>growth'
     },
     pillar1: {
       title: { de: 'NACHHALTIGKEIT', en: 'SUSTAINABILITY' },
