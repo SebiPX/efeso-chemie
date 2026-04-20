@@ -25,7 +25,9 @@ const AboutSection = () => {
                 <p dangerouslySetInnerHTML={{ __html: t('about.p1') }} />
                 <p dangerouslySetInnerHTML={{ __html: t('about.p2') }} />
                 <p dangerouslySetInnerHTML={{ __html: t('about.p3') }} />
-                <p dangerouslySetInnerHTML={{ __html: t('about.p4') }} />
+                {t('about.p4') && t('about.p4') !== 'about.p4' && (
+                  <p dangerouslySetInnerHTML={{ __html: t('about.p4') }} />
+                )}
               </div>
 
                <div id="contact" className="scroll-mt-24">
