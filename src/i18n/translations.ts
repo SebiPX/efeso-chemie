@@ -85,7 +85,7 @@ export const translations = {
       en: 'In addition, the Advisory Board contributes its expertise to selected consulting projects as needed. EFESO clients benefit in several ways: from in-depth, proven expertise; from solutions tailored to top-management needs; and from answers to critical strategic and operational questions. Members of the Advisory Board discuss key topics and initiatives in the video interviews shown here.'
     },
     headline: {
-      de: 'WACHSTUMSCHANCEN NUTZEN',
+      de: 'WACHSTUMS\u00ADCHANCEN NUTZEN',
       en: 'Accelerating growth'
     },
     pillar1: {
@@ -107,7 +107,7 @@ export const translations = {
   },
   videos: {
     sustainability: {
-      title: { de: 'NACHHALTIGKEIT', en: 'SUSTAINABILITY' },
+      title: { de: 'NACHHALTIG\u00ADKEIT', en: 'SUSTAINABILITY' },
       sub: { de: 'Nachhaltigkeit in einen Wettbewerbsvorteil verwandeln', en: 'Turning sustainability into a competitive advantage' },
       text1: {
         de: 'Chemieunternehmen treiben Nachhaltigkeit in zwei Rollen voran: als Lösungsanbieter für Recycling, erneuerbare Energien und Versorgungssicherheit sowie als Gestalter der eigenen Produktion. Dafür optimieren sie Prozesse, ihren Energieeinsatz sowie ihre Feedstocks und investieren in klimafreundliche Next‑Generation‑Anlagen.',
