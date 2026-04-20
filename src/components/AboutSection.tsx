@@ -2,7 +2,7 @@ import { FadeIn } from './FadeIn';
 import { useLanguage } from '../context/LanguageContext';
 
 const AboutSection = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   return (
     <section id="about" className="relative w-full py-12 bg-transparent overflow-hidden">
