@@ -32,7 +32,12 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
     localStorage.setItem('efeso_lang', lang);
+    document.documentElement.lang = lang;
   };
+
+  useEffect(() => {
+    document.documentElement.lang = language;
+  }, [language]);
 
   const t = (path: string): string => {
     const keys = path.split('.');

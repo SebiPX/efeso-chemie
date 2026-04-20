@@ -49,7 +49,7 @@ const VideoSection = () => {
         {/* -- SUSTAINABILITY INTRO -- */}
         <FadeIn direction="up">
         <div id="sustainability" className="w-full mb-12 flex flex-col items-start text-left scroll-mt-32">
-          <h3 className="text-5xl md:text-[65px] font-bold text-[#ef7918] mb-4 tracking-tight drop-shadow-sm uppercase leading-none whitespace-pre-line break-words hyphens-auto">
+          <h3 className="text-[10vw] sm:text-5xl md:text-[65px] font-bold text-[#ef7918] mb-4 tracking-tight drop-shadow-sm uppercase leading-none whitespace-pre-line break-words hyphens-auto">
             {t('videos.sustainability.title')}
           </h3>
           <p className="text-white text-[20px] md:text-[24px] font-bold mb-4 drop-shadow-sm whitespace-pre-line">
@@ -87,7 +87,7 @@ const VideoSection = () => {
         {/* -- DECARBONIZATION INTRO -- */}
         <FadeIn direction="up">
         <div id="decarbonization" className="w-full mt-20 mb-12 flex flex-col items-end text-right scroll-mt-32">
-          <h3 className="text-5xl md:text-[65px] font-bold text-[#ef7918] mb-4 tracking-tight drop-shadow-sm uppercase whitespace-pre-line break-words hyphens-auto">
+          <h3 className="text-[10vw] sm:text-5xl md:text-[65px] font-bold text-[#ef7918] mb-4 tracking-tight drop-shadow-sm uppercase whitespace-pre-line break-words hyphens-auto">
             {t('videos.decarbonization.title')}
           </h3>
           <p className="text-white text-[20px] md:text-[24px] font-bold mb-4 whitespace-pre-line">
@@ -126,7 +126,7 @@ const VideoSection = () => {
 
         {/* -- INFRASTRUCTURE INTRO -- */}
         <div id="infrastructure" className="w-full mt-20 mb-12 flex flex-col items-start text-left scroll-mt-32">
-          <h3 className="text-5xl md:text-[65px] font-bold text-[#ef7918] mb-4 tracking-tight drop-shadow-sm uppercase whitespace-pre-line break-words hyphens-auto">
+          <h3 className="text-[10vw] sm:text-5xl md:text-[65px] font-bold text-[#ef7918] mb-4 tracking-tight drop-shadow-sm uppercase whitespace-pre-line break-words hyphens-auto">
             {t('videos.infrastructure.title')}
           </h3>
           <p className="text-white text-[20px] md:text-[24px] font-bold mb-4 whitespace-pre-line">
@@ -169,7 +169,7 @@ const VideoSection = () => {
 
         {/* -- OPERATIONAL EXCELLENCE INTRO -- */}
         <div id="operational-excellence" className="w-full mt-20 mb-12 flex flex-col items-end text-right scroll-mt-32">
-          <h3 className="text-5xl md:text-[65px] font-bold text-[#ef7918] mb-4 tracking-tight drop-shadow-sm uppercase leading-none whitespace-pre-line break-words hyphens-auto">
+          <h3 className="text-[10vw] sm:text-5xl md:text-[65px] font-bold text-[#ef7918] mb-4 tracking-tight drop-shadow-sm uppercase leading-none whitespace-pre-line break-words hyphens-auto">
             {t('videos.opex.title')}
           </h3>
           <p className="text-white text-[20px] md:text-[24px] font-bold mb-4 mt-4 whitespace-pre-line">
