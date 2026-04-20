@@ -174,7 +174,7 @@ const HeroSection = () => {
 
               {/* MOBILE ONLY ICE CUBE (Placed between Text and H2) */}
               <div className="col-span-1 md:hidden flex justify-center mb-8">
-                 <a href="https://www.roi.de/unternehmensberatung/referenzen/beratung-chemie" target="_blank" rel="noreferrer" className="block max-w-[260px] sm:max-w-[300px]">
+                 <a href={language === 'de' ? "https://www.roi.de/unternehmensberatung/page" : "https://www.roi-international.com/management-consulting/page"} target="_blank" rel="noreferrer" className="block max-w-[260px] sm:max-w-[300px]">
                    <img 
                      src="/image/wuerfel-efeso-new.png" 
                      alt="Efeso Ice Cube" 
@@ -197,7 +197,7 @@ const HeroSection = () => {
 
           {/* Right Side: Ice Cube (Desktop Only) */}
           <div className="hidden md:flex w-full md:w-[45%] justify-end shrink-0">
-             <a href="https://www.roi.de/unternehmensberatung/referenzen/beratung-chemie" target="_blank" rel="noreferrer" className="block md:max-w-[380px] lg:max-w-[480px]">
+             <a href={language === 'de' ? "https://www.roi.de/unternehmensberatung/page" : "https://www.roi-international.com/management-consulting/page"} target="_blank" rel="noreferrer" className="block md:max-w-[380px] lg:max-w-[480px]">
                <img 
                  src="/image/wuerfel-efeso-new.png" 
                  alt="Efeso Ice Cube" 

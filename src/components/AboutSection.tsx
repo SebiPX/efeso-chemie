@@ -63,7 +63,7 @@ const AboutSection = () => {
                       </div>
                    </div>
                    <a 
-                     href="https://www.roi.de/unternehmensberatung/referenzen/beratung-chemie" 
+                     href={language === 'de' ? "https://www.roi.de/unternehmensberatung/page" : "https://www.roi-international.com/management-consulting/page"} 
                      target="_blank" 
                      rel="noreferrer"
                      className="bg-[#ef7918] text-white font-bold py-3 px-6 rounded-md uppercase tracking-wider shadow-[0_0_15px_rgba(239,121,24,0.4)] hover:bg-orange-600 transition-all flex items-center justify-center w-full md:w-auto text-center md:-mt-2 whitespace-pre-line leading-tight"
