@@ -20,7 +20,7 @@ const TopicsSection = () => {
         
         {/* Intro Text Box */}
         <div className="flex flex-col mb-20 px-4">
-          <div className="w-full text-white/90 text-[14px] md:text-[15px] leading-relaxed text-left font-light space-y-4">
+          <div className="w-full text-white/90 text-[14px] md:text-[15px] leading-relaxed text-justify font-light space-y-4 [text-align-last:left]">
             <p>
               {t('topics.intro1')}
             </p>

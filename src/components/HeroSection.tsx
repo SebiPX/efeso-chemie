@@ -233,7 +233,7 @@ const HeroSection = () => {
                      {expert.name}
                    </h4>
                    {expert.title && (
-                      <p className="text-[10px] md:text-[11px] text-white font-medium leading-snug text-justify">
+                      <p className="text-[10px] md:text-[11px] text-white font-medium leading-snug">
                         {expert.title.split('\n').map((line, i) => (
                           <span key={i}>
                             {line}
