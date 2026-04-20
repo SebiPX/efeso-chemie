@@ -71,14 +71,14 @@ const VideoSection = () => {
           <VideoCard 
             imageSrc="/image/NA-Christoph-TN.png"
             name="Dr. Christoph Balzarek"
-            role={"EVP Corporate Development,\nSustainability & Innovation OXEA"}
+            role={"EVP Corporate Development, Sustainability & Innovation\nOXEA"}
             fallbackSeed="cbx"
             videoUrl="https://youtu.be/zFNR5h5E818"
           />
           <VideoCard 
             imageSrc="/image/NA-Hatem-TN.png"
             name="HATEM SOLIMAN"
-            role={"Former President Middle East, Asia Pacific\nand Latin America Regions\nSchlumberger"}
+            role={"Former President Middle East, Asia Pacific and Latin America Regions\nSchlumberger"}
             fallbackSeed="hsx"
             videoUrl="https://youtu.be/SbuNCT3s0wc"
           />
@@ -109,7 +109,7 @@ const VideoSection = () => {
           <VideoCard 
             imageSrc="/image/DE-Pieter-TN.png" 
             name="Pieter Boon"
-            role={"Member of The Supervisory\nBoard AnQore"}
+            role={"Member of The Supervisory Board\nAnQore"}
             fallbackSeed="pbx"
             videoUrl="https://youtu.be/yOB2_34VAQM"
           />
