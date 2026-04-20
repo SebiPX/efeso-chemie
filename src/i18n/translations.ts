@@ -34,11 +34,11 @@ export const translations = {
     },
     cta: {
       de: 'Gespräch\nvereinbaren',
-      en: 'Book\na call'
+      en: 'Book a call'
     },
     copy1: {
-      de: 'Die chemische Industrie befindet sich an einem strategischen Wendepunkt: Globale Wettbewerbsdynamiken, strukturelle Kostenunterschiede und tiefgreifende Marktveränderungen erfordern neue Wege und wirksame Maßnahmen. Unter dem Leitmotiv <strong>From Pressure to Profit</strong> fokussiert sich EFESO mit seinen Kunden in der Chemieindustrie konsequent auf Wertsteigerung: durch operative Exzellenz, resiliente Wertschöpfungsketten und die gezielte Nutzung von Technologien und Innovationen – eine Ausrichtung, die zugleich eine zentrale industrielle Priorität für Europa darstellt.',
-      en: 'The chemical industry is at a strategic turning point: global competitive dynamics, structural cost differences, and profound market changes call for new approaches and effective measures. Under the motto <strong>From Pressure to Profit</strong>, EFESO works closely with its clients in the chemical industry to consistently drive value creation through operational excellence, resilient supply chains, and the strategic use of technologies and innovations—an approach that also represents a key industrial priority for Europe.'
+      de: 'Die chemische Industrie befindet sich an einem strategischen Wendepunkt: Globale Wettbewerbsdynamiken, strukturelle Kostenunterschiede und tiefgreifende Marktveränderungen erfordern neue Wege und wirksame Maßnahmen. Unter dem Leitmotiv <strong>"From Pressure to Profit"</strong> fokussiert sich EFESO mit seinen Kunden in der Chemieindustrie konsequent auf Wertsteigerung: durch operative Exzellenz, resiliente Wertschöpfungsketten und die gezielte Nutzung von Technologien und Innovationen – eine Ausrichtung, die zugleich eine zentrale industrielle Priorität für Europa darstellt.',
+      en: 'The chemical industry is at a strategic turning point: global competitive dynamics, structural cost differences, and profound market changes call for new approaches and effective measures. Under the motto <strong>"From Pressure to Profit"</strong>, EFESO works closely with its clients in the chemical industry to consistently drive value creation through operational excellence, resilient supply chains, and the strategic use of technologies and innovations—an approach that also represents a key industrial priority for Europe.'
     },
     copy2: {
       de: 'Praxisnahe Lösungen für ein nachhaltiges Wachstum und Profitabilität in der Industrie entstehen im EFESO Chemicals Advisory Board EMEA. TOP-Executives aus der Branche zeigen hier entsprechende Lösungswege für die entscheidenden Transformationsfelder und -schritte auf.',
@@ -157,24 +157,24 @@ export const translations = {
   },
   about: {
     headline: { de: 'ÜBER EFESO', en: 'About EFESO' },
-    sub: { de: 'Real Results, Together', en: 'EFESO Management Consultants\nThe leading global pure play operations consultancy' },
+    sub: { de: 'EFESO Management Consultants\nReal Results, Together', en: 'EFESO Management Consultants\nReal Results, Together' },
     p1: { 
       de: 'EFESO Management Consultants ist mit rund 1.000 Mitarbeitenden an 35 Standorten weltweit die führende internationale Operations-Beratung und Transformationspartner für die produzierende Industrie. Gemeinsam mit unseren Kunden setzen wir Standards für Performance, Resilienz und Produktivität und ermöglichen eine signifikante Wertsteigerung in der gesamten Wertschöpfungskette.',
-      en: 'EFESO Management Consultants is the leading global pure player in operations strategy and performance improvement. We are committed to delivering real results, together with our clients across industries. We create outcomes that make a tangible difference—changes you can see, feel, and measure.'
+      en: 'We deliver tailored, end-to-end services in operations, integrating industrial AI and digital, sustainability, and people development. Our expertise covers the full spectrum: from operations strategy and transformation to transactions & turnaround, R&D and product profitability, cost and value engineering, manufacturing, procurement and supply chain.'
     },
     p2: {
       de: 'Um diese Ziele zu erreichen, denken wir Produkte E-2-E von der Idee bis zur Industrialisierung, erstellen und realisieren ganzheitliche Smart Factory Konzepte, adaptive Supply Chains sowie neue Betriebs- und Organisationsmodelle. Bei der Gestaltung und Etablierung operativer Prozesse stehen für uns Effizienz, Kostenoptimierung und Kundenorientierung im Vordergrund. In all diesen Bereichen erschließen wir die Potenziale der industriellen Digitalisierung.',
-      en: 'For us, real means results that are concrete and impactful, directly addressing the unique needs of each client. Together reflects our commitment to partnership, working closely with your teams to solve today’s challenges and build resilience for the future. We provide end-to-end operation services, integrating processes, human dynamics, digital technology, and sustainability.'
+      en: 'Each year, we work with leaders from global brands, mid-sized companies, and private equity on more than 1,500 across 75+ countries.'
     },
     p3: {
       de: 'Die Nachhaltigkeit dieser Veränderungen sichern wir durch Qualifizierungsprogramme und Führungskräfteentwicklung ab. Darüber hinaus unterhalten wir zahlreiche strategische Partnerschaften zu taktgebenden Technologieunternehmen und hochspezialisierten Experten, um für unsere Kunden den Zugang zu Top-Knowhow in relevanten Bereichen zu ermöglichen.',
-      en: 'Our expertise spans production and operational excellence, supply chain optimization, and idea-to-value solutions. Working in tandem with business leaders from global brands, mid-sized companies, and private equity, we drive transformation through 1,500+ projects annually in over 75 countries. This is powered by deep industry expertise and a commitment to lasting impact.'
+      en: 'What sets us apart is deep industry knowledge combined with hands-on implementation. The outcome: improvements you can see, feel, and measure.'
     },
     p4: {
       de: 'Die Arbeit von EFESO wird regelmäßig für ihre Ergebnisqualität, Effizienz und den Innovationsgrad ausgezeichnet und erreicht Spitzenplatzierungen in bedeutenden Branchen-Rankings. Seit 2013 prämiert EFESO die besten Praxislösungen der industriellen Digitalisierung mit dem <a href="https://www.industrie40award.com/" target="_blank" rel="noreferrer" class="text-white font-bold hover:underline transition-all">INDUSTRIE 4.0 AWARD</a>, der zu den renommiertesten internationalen Industriepreisen zählt.',
-      en: 'EFESO\'s work is regularly recognized for the high quality of its results and efficiency, as well the ability to deliver innovation, consistently reflected in high major industry rankings. Since 2013, EFESO has been awarding the best practical solutions in industrial digitalization with the <a href="https://www.industrie40award.com/" target="_blank" rel="noreferrer" class="text-white font-bold hover:underline transition-all">INDUSTRIE 4.0 AWARD</a>, which is one of the most prestigious international industry awards.'
+      en: ''
     },
-    contactHeader: { de: 'Kontakt', en: 'Your Contact' },
+    contactHeader: { de: 'Kontakt', en: 'Contact' },
     emailSubject: { 
       de: 'From Pressure to Profit – Bitte um weitere Informationen', 
       en: 'From Pressure to Profit – Please provide further information' 
@@ -191,8 +191,8 @@ export const translations = {
     about: { de: 'Über EFESO', en: 'About EFESO' },
     faq: { de: 'FAQ', en: 'FAQ' },
     contact: { de: 'Kontakt', en: 'Contact' },
-    privacy: { de: 'Privacy Policy', en: 'Privacy Policy' },
-    legal: { de: 'Legal Notice', en: 'Legal Notice' },
+    privacy: { de: 'Datenschutzerklärung', en: 'Data Protection' },
+    legal: { de: 'Impressum', en: 'Legal Notice' },
     rights: { de: 'All rights reserved.', en: 'All rights reserved.' }
   }
 };

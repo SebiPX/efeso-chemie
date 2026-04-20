@@ -136,7 +136,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-[100vh] pt-16 md:pt-20 lg:pt-24 pb-6 overflow-hidden flex items-center justify-center">
+    <section className="relative min-h-[100vh] pt-32 sm:pt-28 md:pt-20 lg:pt-24 pb-6 overflow-hidden flex items-center justify-center">
 
       {/* Main Container - Restricting max width to keep elements closer together like the original 970px layout */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-0 flex flex-col justify-center">
@@ -186,11 +186,13 @@ const HeroSection = () => {
 
           {/* Right Side: Ice Cube */}
           <div className="w-full md:w-[45%] flex justify-center md:justify-end shrink-0 mt-6 md:mt-0">
-             <img 
-               src="/image/wuerfel-efeso-new.png" 
-               alt="Efeso Ice Cube" 
-               className="w-full max-w-[280px] sm:max-w-[320px] md:max-w-[380px] lg:max-w-[480px] h-auto object-contain transform hover:-translate-y-2 md:translate-x-4 lg:translate-x-16 transition-transform duration-700"
-             />
+             <a href="https://www.roi.de/unternehmensberatung/referenzen/beratung-chemie" target="_blank" rel="noreferrer" className="block max-w-[280px] sm:max-w-[320px] md:max-w-[380px] lg:max-w-[480px]">
+               <img 
+                 src="/image/wuerfel-efeso-new.png" 
+                 alt="Efeso Ice Cube" 
+                 className="w-full h-auto object-contain transform hover:-translate-y-2 md:translate-x-4 lg:translate-x-16 transition-transform duration-700"
+               />
+             </a>
           </div>
 
         </div>
@@ -231,7 +233,7 @@ const HeroSection = () => {
                      {expert.name}
                    </h4>
                    {expert.title && (
-                      <p className="text-[10px] md:text-[11px] text-white font-medium leading-snug">
+                      <p className="text-[10px] md:text-[11px] text-white font-medium leading-snug text-justify">
                         {expert.title.split('\n').map((line, i) => (
                           <span key={i}>
                             {line}

@@ -1,7 +1,7 @@
 import { useLanguage } from '../context/LanguageContext';
 
 const Footer = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   return (
     <footer className="bg-transparent py-8 relative z-20 border-t border-white/10 mt-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col xl:flex-row items-center justify-between gap-6">
@@ -17,8 +17,8 @@ const Footer = () => {
           <a href="#about" className="hover:text-[#ef7918] transition-colors">{t('footer.about')}</a>
           <a href="#contact" className="hover:text-[#ef7918] transition-colors">{t('footer.contact')}</a>
           <span className="hidden md:inline text-white/20">|</span>
-          <a href="https://www.roi.de/datenschutzerklaerung" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">{t('footer.privacy')}</a>
-          <a href="https://www.roi.de/unternehmensberatung/kontakt/impressum" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">{t('footer.legal')}</a>
+          <a href={language === 'de' ? "https://www.roi.de/datenschutzerklaerung" : "https://www.roi-international.com/data-protection"} target="_blank" rel="noreferrer" className="hover:text-white transition-colors">{t('footer.privacy')}</a>
+          <a href={language === 'de' ? "https://www.roi.de/unternehmensberatung/kontakt/impressum" : "https://www.roi-international.com/management-consulting/contact/legal-notice"} target="_blank" rel="noreferrer" className="hover:text-white transition-colors">{t('footer.legal')}</a>
         </div>
 
         {/* Right: Copyright */}
