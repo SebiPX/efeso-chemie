@@ -64,9 +64,9 @@ const AboutSection = () => {
                      href="https://www.roi.de/unternehmensberatung/referenzen/beratung-chemie" 
                      target="_blank" 
                      rel="noreferrer"
-                     className="bg-[#ef7918] text-white font-bold py-3 px-6 rounded-md uppercase tracking-wider shadow-[0_0_15px_rgba(239,121,24,0.4)] hover:bg-orange-600 transition-all flex items-center justify-center w-full md:w-auto text-center md:-mt-2"
+                     className="bg-[#ef7918] text-white font-bold py-3 px-6 rounded-md uppercase tracking-wider shadow-[0_0_15px_rgba(239,121,24,0.4)] hover:bg-orange-600 transition-all flex items-center justify-center w-full md:w-auto text-center md:-mt-2 whitespace-pre-line leading-tight"
                    >
-                     {language === 'de' ? 'Zur Branchenexpertise von EFESO' : 'About EFESO\'s Industry Expertise'}
+                     {language === 'de' ? 'Zur Branchenexpertise\nvon EFESO' : 'About EFESO\'s\nIndustry Expertise'}
                    </a>
                  </div>
               </div>
