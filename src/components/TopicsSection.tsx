@@ -46,7 +46,7 @@ const TopicsSection = () => {
                     {topic.title}
                   </h3>
                   {topic.text && (
-                    <p className="text-white text-[12px] md:text-[13px] leading-relaxed text-left opacity-95">
+                    <p className="text-white text-[14px] md:text-[15px] leading-relaxed text-left opacity-95">
                       {topic.text.substring(0, 203)}
                     </p>
                   )}

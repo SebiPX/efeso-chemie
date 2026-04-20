@@ -20,7 +20,7 @@ const VideoCard = ({ imageSrc, name, role, fallbackSeed, videoUrl }: { imageSrc:
         />
         {isVideo && (
           <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-500 flex items-center justify-center">
-            <div className="w-14 h-14 md:w-16 md:h-16 bg-[#ef7918]/90 rounded-full flex items-center justify-center transform group-hover:scale-110 group-hover:bg-[#ef7918] transition-all duration-500 shadow-lg pl-1">
+            <div className="w-14 h-14 md:w-16 md:h-16 bg-[#ef7918]/90 rounded-full flex items-center justify-center transform group-hover:scale-110 group-hover:bg-[#ef7918] transition-all duration-500 shadow-lg">
               <svg className="w-7 h-7 md:w-8 md:h-8 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
             </div>
           </div>
@@ -93,7 +93,7 @@ const VideoSection = () => {
           <p className="text-white text-[20px] md:text-[24px] font-bold mb-4 whitespace-pre-line">
             {t('videos.decarbonization.sub')}
           </p>
-          <div className="w-full md:w-[85%] space-y-5 text-white/95 text-[13px] md:text-[14px] leading-relaxed text-justify">
+          <div className="w-full md:w-[85%] space-y-5 text-white/95 text-[13px] md:text-[14px] leading-relaxed text-justify [text-align-last:right]">
             <p>
               {t('videos.decarbonization.text1')}
             </p>
@@ -175,7 +175,7 @@ const VideoSection = () => {
           <p className="text-white text-[20px] md:text-[24px] font-bold mb-4 mt-4 whitespace-pre-line">
             {t('videos.opex.sub')}
           </p>
-          <div className="w-full md:w-[85%] space-y-5 text-white/95 text-[13px] md:text-[14px] leading-relaxed text-justify">
+          <div className="w-full md:w-[85%] space-y-5 text-white/95 text-[13px] md:text-[14px] leading-relaxed text-justify [text-align-last:right]">
             <p>
               {t('videos.opex.text1')}
             </p>

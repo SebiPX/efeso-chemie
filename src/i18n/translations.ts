@@ -126,7 +126,7 @@ export const translations = {
          en: 'The pressure to reduce Scope 1 and Scope 2 emissions is growing - from regulators, customers, and for economic reasons. In the chemical sector, this requires an increased use of alternative energy sources and electrified production processes.'
        },
        text2: {
-         de: 'In den Video-Interviews schildern die Themenexperten, warum das Thema erfolgskritisch für eine zukunftsfähige Chemieindustrie ist und wo Potenziale vorhanden sind.',
+         de: 'In den Video-Interviews schildern die Themenexperten, warum das Thema erfolgskritisch für eine zukunftsfähige Chemieindustrie ist und wo Potenziale vorhanden\u00A0sind.',
          en: 'Learn from industry experts why this topic is critical to the success of a sustainable chemical industry and where opportunities lie.'
        }
     },
