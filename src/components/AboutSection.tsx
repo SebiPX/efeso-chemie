@@ -68,7 +68,7 @@ const AboutSection = () => {
                      rel="noreferrer"
                      className="bg-[#ef7918] text-white font-bold py-4 xl:py-0 px-3 lg:px-4 text-[12px] xl:text-[14px] rounded-md uppercase tracking-wide shadow-[0_0_15px_rgba(239,121,24,0.4)] hover:bg-orange-600 transition-all flex flex-col items-center justify-center w-full xl:w-max text-center overflow-hidden"
                    >
-                     <span>{language === 'de' ? <>Zur Branchenexpertise<br/>von EFESO</> : <>About EFESO's<br/>Industry Expertise</>}</span>
+                     <span>{language === 'de' ? <>Zur Branchen-<br/>Expertise<br/>von EFESO</> : <>About EFESO's<br/>Industry<br/>Expertise</>}</span>
                    </a>
                  </div>
               </div>
