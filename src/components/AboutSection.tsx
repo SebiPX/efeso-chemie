@@ -32,13 +32,13 @@ const AboutSection = () => {
 
                <div id="contact" className="scroll-mt-24">
                  <h4 className="text-sm md:text-base font-bold text-[#ef7918] mb-5 uppercase tracking-wider">{t('about.contactHeader')}</h4>
-                 <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
-                   <div className="flex items-start gap-6 bg-[#3c3d43]/30 p-6 rounded-[4px] border border-white/5 w-full md:w-max hover:bg-[#3c3d43]/50 transition-colors">
-                      <div className="w-24 h-24 rounded-md overflow-hidden border-2 border-[#ef7918]/50 flex-shrink-0 mt-1">
+                 <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-0 relative">
+                   <div className="flex items-start gap-4 lg:gap-6 bg-[#3c3d43]/30 p-6 rounded-[4px] border border-white/5 w-full shrink-0 hover:bg-[#3c3d43]/50 transition-colors z-10">
+                      <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-md overflow-hidden border-2 border-[#ef7918]/50 flex-shrink-0 mt-1">
                         <img src="/image/Cruzado.png" alt="Fernando Cruzado Placeholder" className="w-full h-full object-cover" />
                       </div>
-                      <div className="text-[13px] text-white/80 leading-snug font-medium flex flex-col justify-center gap-1.5">
-                        <span className="font-bold uppercase text-[18px] text-white tracking-wide mb-0.5">Fernando Cruzado</span>
+                      <div className="text-[12px] lg:text-[13px] text-white/80 leading-snug font-medium flex flex-col justify-center gap-1.5">
+                        <span className="font-bold uppercase text-[16px] lg:text-[18px] text-white tracking-wide mb-0.5">Fernando Cruzado</span>
                         <span>VP/Partner & Head of Chemical Industry EMEA</span>
                         <span className="text-[#ef7918] font-bold mb-2">EFESO Management Consultants</span>
                         
@@ -66,7 +66,7 @@ const AboutSection = () => {
                      href={language === 'de' ? "https://www.roi.de/unternehmensberatung/referenzen/beratung-chemie" : "https://www.roi-international.com/management-consulting/references/chemicals"} 
                      target="_blank" 
                      rel="noreferrer"
-                     className="bg-[#ef7918] text-white font-bold py-3 px-6 rounded-md uppercase tracking-wider shadow-[0_0_15px_rgba(239,121,24,0.4)] hover:bg-orange-600 transition-all flex items-center justify-center w-full md:w-auto text-center md:-mt-2 whitespace-pre-line leading-tight"
+                     className="bg-[#ef7918] text-white font-bold py-4 px-6 rounded-md uppercase tracking-wider shadow-[0_0_15px_rgba(239,121,24,0.4)] hover:bg-orange-600 transition-all flex items-center justify-center w-full md:w-auto text-center shrink-0 md:-ml-2 z-20 whitespace-pre-line leading-tight md:translate-x-2"
                    >
                      {language === 'de' ? 'Zur Branchenexpertise\nvon EFESO' : 'About EFESO\'s\nIndustry Expertise'}
                    </a>
