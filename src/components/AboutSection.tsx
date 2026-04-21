@@ -32,12 +32,12 @@ const AboutSection = () => {
 
                <div id="contact" className="scroll-mt-24">
                  <h4 className="text-sm md:text-base font-bold text-[#ef7918] mb-5 uppercase tracking-wider">{t('about.contactHeader')}</h4>
-                 <div className="flex flex-wrap items-stretch justify-between gap-4 w-full">
-                   <div className="flex items-start gap-4 lg:gap-6 bg-[#3c3d43]/30 p-4 lg:p-6 rounded-[4px] border border-white/5 w-full xl:w-max hover:bg-[#3c3d43]/50 transition-colors">
+                 <div className="flex flex-col xl:flex-row items-stretch justify-between gap-4 lg:gap-6 w-full">
+                   <div className="flex items-start gap-4 lg:gap-6 bg-[#3c3d43]/30 p-5 lg:p-6 rounded-[4px] border border-white/5 w-full xl:w-max hover:bg-[#3c3d43]/50 transition-colors shrink">
                       <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-md overflow-hidden border-2 border-[#ef7918]/50 flex-shrink-0 mt-1">
                         <img src="/image/Cruzado.png" alt="Fernando Cruzado Placeholder" className="w-full h-full object-cover" />
                       </div>
-                      <div className="text-[12px] lg:text-[13px] text-white/80 leading-snug font-medium flex flex-col justify-center gap-1.5">
+                      <div className="text-[12px] lg:text-[13px] text-white/80 leading-snug font-medium flex flex-col justify-center gap-1.5 min-w-[200px]">
                         <span className="font-bold uppercase text-[16px] lg:text-[18px] text-white tracking-wide mb-0.5">Fernando Cruzado</span>
                         <span>VP/Partner & Head of Chemical Industry EMEA</span>
                         <span className="text-[#ef7918] font-bold mb-2">EFESO Management Consultants</span>
@@ -66,7 +66,7 @@ const AboutSection = () => {
                      href={language === 'de' ? "https://www.roi.de/unternehmensberatung/referenzen/beratung-chemie" : "https://www.roi-international.com/management-consulting/references/chemicals"} 
                      target="_blank" 
                      rel="noreferrer"
-                     className="bg-[#ef7918] text-white font-bold py-4 md:py-0 px-6 rounded-md uppercase tracking-wider shadow-[0_0_15px_rgba(239,121,24,0.4)] hover:bg-orange-600 transition-all flex flex-col items-center justify-center w-full md:w-auto text-center shrink-0 md:ml-auto"
+                     className="bg-[#ef7918] text-white font-bold py-4 xl:py-0 px-6 rounded-md uppercase tracking-wider shadow-[0_0_15px_rgba(239,121,24,0.4)] hover:bg-orange-600 transition-all flex flex-col items-center justify-center w-full xl:w-max text-center shrink-0"
                    >
                      <span>{language === 'de' ? <>Zur Branchenexpertise<br/>von EFESO</> : <>About EFESO's<br/>Industry Expertise</>}</span>
                    </a>
