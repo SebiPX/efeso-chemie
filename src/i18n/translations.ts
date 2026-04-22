@@ -93,7 +93,7 @@ export const translations = {
       text: { de: 'Als Lösungsanbieter neue Märkte erschließen und die eigene Produktion kontinuierlich optimieren.', en: 'As a solutions provider, tap into new markets and continuously optimize your own production.' }
     },
     pillar2: {
-      title: { de: 'DEKARBONISIERUNG\n& CLEAN ENERGY', en: 'DECARBONISIERUNG\n& CLEAN ENERGY' },
+      title: { de: 'DEKARBONISIERUNG\n& CLEAN ENERGY', en: 'DECARBONIZATION\n& CLEAN ENERGY' },
       text: { de: 'Transformationserfolge erzielen und über Organisationseinheiten und Werke skalieren.', en: 'Achieve transformation success and scale it across organizational units and plants.' }
     },
     pillar3: {
